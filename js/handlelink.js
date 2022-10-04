@@ -133,7 +133,9 @@ var links = [
     "https://nxos.org/",
     "https://ultramarine-linux.org",
     "https://en.cutefishos.com/", //the website takes ages to load, if ever
-    "https://rockylinux.org/"
+    "https://rockylinux.org/",
+    "https://img.cs.montana.edu/",
+    "https://risi.io/"
 ];
 
 var EOLlinks = [
@@ -396,7 +398,9 @@ var redhatlinks = [
     "https://silverblue.fedoraproject.org/",
     "https://almalinux.org",
     "https://ultramarine-linux.org",
-    "https://rockylinux.org/"
+    "https://rockylinux.org/",
+    "https://img.cs.montana.edu/",
+    "https://risi.io/"
 ];
 
 var EOLredhatlinks = [

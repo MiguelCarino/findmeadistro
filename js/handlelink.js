@@ -17,7 +17,7 @@ var links = [
     "https://xubuntu.org/",
     "https://kubuntu.org/",
     "https://www.raspberrypi.org/software/",
-    "https://store.steampowered.com/steamos",
+    "https://github.com/theVakhovskeIsTaken/holoiso",
     "https://www.centos.org/",
     "https://www.opensuse.org/",
     "https://www.openmandriva.org/",
@@ -170,7 +170,8 @@ var links = [
     "https://easyos.org/", //Experimental Linux distribution made by Puppy Linux's maintainer
     "https://www.plamolinux.org/", //Slackware-based
     "http://www.omoikane.co.jp/", //Debian-based Japanese distro meant for business support through licensing
-    "https://fuguita.org/" //OpenBSD-based live system
+    "https://fuguita.org/", //OpenBSD-based live system
+    "https://vanillaos.org/"
 
 ];
 
@@ -264,7 +265,7 @@ var debianlinks = [
     "https://xubuntu.org/",
     "https://kubuntu.org/",
     "https://www.raspberrypi.org/software/",
-    "https://store.steampowered.com/steamos",
+    "https://github.com/theVakhovskeIsTaken/holoiso",
     "https://www.pureos.net/",
     "https://astralinux.ru/en/",
     "https://www.parrotsec.org/",
@@ -319,7 +320,8 @@ var debianlinks = [
     "https://escuelaslinux.sourceforge.io/english/index.html",
     "https://www.digi77.com/linux-kodachi/",
     "https://blends.debian.org/edu/",
-    "http://www.omoikane.co.jp/"
+    "http://www.omoikane.co.jp/",
+    "https://vanillaos.org/"
     
 ];
 

@@ -171,7 +171,8 @@ var links = [
     "https://www.plamolinux.org/", //Slackware-based
     "http://www.omoikane.co.jp/", //Debian-based Japanese distro meant for business support through licensing
     "https://fuguita.org/", //OpenBSD-based live system
-    "https://vanillaos.org/"
+    "https://vanillaos.org/",
+    "https://flatpakremix.org/" //Ubuntu with flatpak instead of snap
 
 ];
 
@@ -321,7 +322,8 @@ var debianlinks = [
     "https://www.digi77.com/linux-kodachi/",
     "https://blends.debian.org/edu/",
     "http://www.omoikane.co.jp/",
-    "https://vanillaos.org/"
+    "https://vanillaos.org/",
+    "https://flatpakremix.org/"
     
 ];
 

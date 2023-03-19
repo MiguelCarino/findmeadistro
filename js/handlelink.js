@@ -171,7 +171,8 @@ var links = [
     "http://www.omoikane.co.jp/", //Debian-based Japanese distro meant for business support through licensing
     "https://fuguita.org/", //OpenBSD-based live system
     "https://vanillaos.org/",
-    "https://flatpakremix.org/" //Ubuntu with flatpak instead of snap
+    "https://flatpakremix.org/", //Ubuntu with flatpak instead of snap
+    "https://www.caine-live.net/" //Computer forensics distro based on Ubuntu
 
 ];
 
@@ -225,7 +226,6 @@ var EOLlinks = [
     "https://www.caelinux.com/CMS3/",
     "https://archiveos.org/carolina/",
     "https://archiveos.org/ubuntu-satanic/", //in the other spectrum we have satanic ubuntu
-    "https://www.caine-live.net/",
     "https://archiveos.org/asplinux/",
     "https://archiveos.org/tao/",
     "https://archiveos.org/topologilinux/",
@@ -322,7 +322,8 @@ var debianlinks = [
     "https://blends.debian.org/edu/",
     "http://www.omoikane.co.jp/",
     "https://vanillaos.org/",
-    "https://flatpakremix.org/"
+    "https://flatpakremix.org/",
+    "https://www.caine-live.net/"
     
 ];
 
@@ -354,7 +355,6 @@ var EOLdebianlinks = [
     "https://archiveos.org/black-lab/",
     "https://www.caelinux.com/CMS3/",
     "https://archiveos.org/ubuntu-satanic/", //not sure if this distro has book of sin included
-    "https://www.caine-live.net/",
     "https://archiveos.org/caixa-magica/",
     "https://archiveos.org/delix/",
     "https://archiveos.org/muriqui/",

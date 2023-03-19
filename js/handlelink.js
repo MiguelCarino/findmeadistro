@@ -119,7 +119,6 @@ var links = [
     "https://lxle.net/",
     "https://tos.odex.be/",
     "https://thinstation.github.io/thinstation/",
-    "https://spi.dod.mil/lipose.htm", //not only is this distro having issues with security for it's website, the funding ended. Might move to EOL so I would have to keep an eye on them
     "https://sourceforge.net/projects/rebeccablackos/", //Rebecca Black operating system 
     "https://caixamagica.pt/en/linux-cm",
     "https://easynas.org/",
@@ -556,5 +555,6 @@ var EOLotherlinks = [
     "https://blankon.id/", //parent distribution uknown, check out later
     "https://archiveos.org/saluki/",
     "https://archiveos.org/carolina/",
-    "https://web.archive.org/web/20210720175650/https://spi.dod.mil/lipose.htm" 
+    "https://web.archive.org/web/20210720175650/",
+    "https://spi.dod.mil/lipose.htm" //the funding ended and website is unavailable. Might delete completely.
 ];

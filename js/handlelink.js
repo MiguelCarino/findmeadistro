@@ -172,7 +172,11 @@ var links = [
     "https://fuguita.org/", //OpenBSD-based live system
     "https://vanillaos.org/",
     "https://flatpakremix.org/", //Ubuntu with flatpak instead of snap
-    "https://www.caine-live.net/" //Computer forensics distro based on Ubuntu
+    "https://www.caine-live.net/", //Computer forensics distro based on Ubuntu
+    "https://br-os.com/",
+    "https://amaroklinux.org/",
+    "https://www.linuxfx.org/" //Have an independent fork https://windowsfx.org/",
+    "https://www.linspirelinux.com/"
 
 ];
 
@@ -323,7 +327,12 @@ var debianlinks = [
     "http://www.omoikane.co.jp/",
     "https://vanillaos.org/",
     "https://flatpakremix.org/",
-    "https://www.caine-live.net/"
+    "https://www.caine-live.net/",
+    "https://br-os.com/",
+    "https://amaroklinux.org/",
+    "https://www.linuxfx.org/",
+    "https://www.linspirelinux.com/"
+
     
 ];
 

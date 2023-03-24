@@ -175,7 +175,7 @@ var links = [
     "https://www.caine-live.net/", //Computer forensics distro based on Ubuntu
     "https://br-os.com/",
     "https://amaroklinux.org/",
-    "https://www.linuxfx.org/" //Have an independent fork https://windowsfx.org/",
+    "https://www.linuxfx.org/", //Have an independent fork https://windowsfx.org/",
     "https://www.linspirelinux.com/"
 
 ];
@@ -369,7 +369,7 @@ var EOLdebianlinks = [
     "https://archiveos.org/muriqui/",
     "https://www.jolicloud.com/jolios/",
     "https://www.backslashlinux.com/",
-    "https://amog-os.github.io/", //ඞ sus
+    "https://amog-os.github.io/" //ඞ sus
 ];
 
 var archlinks = [

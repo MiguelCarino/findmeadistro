@@ -176,7 +176,8 @@ var links = [
     "https://br-os.com/",
     "https://amaroklinux.org/",
     "https://www.linuxfx.org/", //Have an independent fork https://windowsfx.org/",
-    "https://www.linspirelinux.com/"
+    "https://www.linspirelinux.com/",
+    "https://blendos.co/" //Arch based distro that has some sort of distrobox integration
 
 ];
 
@@ -391,7 +392,8 @@ var archlinks = [
     "https://arcolinuxb.com/",
     "https://rebornos.org/",
     "https://getcryst.al/site",
-    "https://pearos.xyz/"
+    "https://pearos.xyz/",
+    "https://blendos.co/"
 ];
 
 var EOLarchlinks = [

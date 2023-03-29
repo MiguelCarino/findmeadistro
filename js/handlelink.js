@@ -177,7 +177,8 @@ var links = [
     "https://amaroklinux.org/",
     "https://www.linuxfx.org/", //Have an independent fork https://windowsfx.org/",
     "https://www.linspirelinux.com/",
-    "https://blendos.co/" //Arch based distro that has some sort of distrobox integration
+    "https://blendos.co/", //Arch based distro that has some sort of distrobox integration
+    "https://nakst.gitlab.io/essence"
 
 ];
 
@@ -527,7 +528,8 @@ var otherlinks =[
     "https://archhurd.org/",
     "https://venomlinux.org/",
     "https://kisslinux.org/",
-    "https://easyos.org/"
+    "https://easyos.org/",
+    "https://nakst.gitlab.io/essence"
 ];
 
 var bsdlinks =[

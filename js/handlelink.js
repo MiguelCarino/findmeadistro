@@ -178,7 +178,8 @@ var links = [
     "https://www.linuxfx.org/", //Have an independent fork https://windowsfx.org/",
     "https://www.linspirelinux.com/",
     "https://blendos.co/", //Arch based distro that has some sort of distrobox integration
-    "https://nakst.gitlab.io/essence"
+    "https://nakst.gitlab.io/essence",
+    "https://www.redox-os.org/" //Rust-based independent OS
 
 ];
 
@@ -529,7 +530,8 @@ var otherlinks =[
     "https://venomlinux.org/",
     "https://kisslinux.org/",
     "https://easyos.org/",
-    "https://nakst.gitlab.io/essence"
+    "https://nakst.gitlab.io/essence",
+    "https://www.redox-os.org/"
 ];
 
 var bsdlinks =[

@@ -179,7 +179,8 @@ var links = [
     "https://www.linspirelinux.com/",
     "https://blendos.co/", //Arch based distro that has some sort of distrobox integration
     "https://nakst.gitlab.io/essence",
-    "https://www.redox-os.org/" //Rust-based independent OS
+    "https://www.redox-os.org/", //Rust-based independent OS
+    "https://cachyos.org/" //Arch-based
 
 ];
 
@@ -395,7 +396,8 @@ var archlinks = [
     "https://rebornos.org/",
     "https://getcryst.al/site",
     "https://pearos.xyz/",
-    "https://blendos.co/"
+    "https://blendos.co/",
+    "https://cachyos.org/"
 ];
 
 var EOLarchlinks = [

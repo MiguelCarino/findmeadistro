@@ -180,7 +180,9 @@ var links = [
     "https://blendos.co/", //Arch based distro that has some sort of distrobox integration
     "https://nakst.gitlab.io/essence",
     "https://www.redox-os.org/", //Rust-based independent OS
-    "https://cachyos.org/" //Arch-based
+    "https://cachyos.org/", //Arch-based
+    "https://kaisenlinux.org/", //Debian-based distro for IT diagnostics
+    "https://4mlinux.com/" //Lighweight 32-bit Desktop edition and 64-bit Server edition
 
 ];
 
@@ -335,7 +337,8 @@ var debianlinks = [
     "https://br-os.com/",
     "https://amaroklinux.org/",
     "https://www.linuxfx.org/",
-    "https://www.linspirelinux.com/"
+    "https://www.linspirelinux.com/",
+    "https://kaisenlinux.org/"
 
     
 ];
@@ -533,7 +536,8 @@ var otherlinks =[
     "https://kisslinux.org/",
     "https://easyos.org/",
     "https://nakst.gitlab.io/essence",
-    "https://www.redox-os.org/"
+    "https://www.redox-os.org/",
+    "https://4mlinux.com/"
 ];
 
 var bsdlinks =[

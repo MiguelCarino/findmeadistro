@@ -73,7 +73,6 @@ var links = [
     "https://www.calculate-linux.org/",
     "https://www.chromium.org/chromium-os",
     "https://pentoo.ch/",
-    "https://www.sabayon.org/",
     "https://nimblex.net/",
     "https://salixos.org/",
     "https://www.supergamer.x10host.com/",
@@ -85,7 +84,7 @@ var links = [
     "https://guix.gnu.org/",
     "https://www.foresightlinux.org/",
     "https://www.gobolinux.org/",
-    "https://www.hpcfactor.com/reviews/software/jlime/donkey-1-0-2/",
+    "https://draugeros.org/", //Ubuntu based gaming distro
     "https://voidlinux.org/",
     "http://www.toms.net/rb/",
     "http://www.tinycorelinux.net/",
@@ -184,7 +183,8 @@ var links = [
     "https://kaisenlinux.org/", //Debian-based distro for IT diagnostics
     "https://4mlinux.com/", //Lighweight 32-bit Desktop edition and 64-bit Server edition
     "https://rhinolinux.org/", //ubuntu-based rolling release distro
-    "https://teejeetech.com/tag/zinc/" //ubuntu lts based distro with xfce as default
+    "https://teejeetech.com/tag/zinc/", //ubuntu lts based distro with xfce as default
+    "https://www.supergrubdisk.org/rescatux/" //Debian based distro for rescuiing borken installations
 
 ];
 
@@ -342,7 +342,9 @@ var debianlinks = [
     "https://www.linspirelinux.com/",
     "https://kaisenlinux.org/",
     "https://rhinolinux.org/",
-    "https://teejeetech.com/tag/zinc/"
+    "https://teejeetech.com/tag/zinc/",
+    "https://draugeros.org/",
+    "https://www.supergrubdisk.org/rescatux/"
 
     
 ];
@@ -419,7 +421,6 @@ var EOLarchlinks = [
 
 var gentoolinks = [
     "https://www.gentoo.org/",
-    "https://www.sabayon.org/",
     "https://chromeenterprise.google/os/chromeosflex/",
     "https://www.calculate-linux.org/",
     "https://www.chromium.org/chromium-os",
@@ -516,7 +517,6 @@ var otherlinks =[
     "https://guix.gnu.org/",
     "https://www.foresightlinux.org/",
     "https://www.gobolinux.org/",
-    "https://www.hpcfactor.com/reviews/software/jlime/donkey-1-0-2/",
     "https://voidlinux.org/",
     "http://www.toms.net/rb/",
     "http://www.tinycorelinux.net/",

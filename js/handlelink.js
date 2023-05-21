@@ -158,7 +158,7 @@ var links = [
     "https://getcryst.al/site",//Arch distro with GNOME and Amethyst AUR helper
     "https://escuelaslinux.sourceforge.io/english/index.html", //Based on Bodhi, designed for preschool
     "https://liguros.gitlab.io/", //Gentoo based
-    "https://pikaos.ferreo.dev/", //Gaming Ubuntu based distro with Nobara Tweaks
+    "https://pika-os.com/", //Gaming Ubuntu based distro with Nobara Tweaks
     "https://redcorelinux.org/", //Hardened Gentoo
     "https://pearos.xyz/", //macos like Arch
     "https://chimera-linux.org/",
@@ -182,7 +182,9 @@ var links = [
     "https://www.redox-os.org/", //Rust-based independent OS
     "https://cachyos.org/", //Arch-based
     "https://kaisenlinux.org/", //Debian-based distro for IT diagnostics
-    "https://4mlinux.com/" //Lighweight 32-bit Desktop edition and 64-bit Server edition
+    "https://4mlinux.com/", //Lighweight 32-bit Desktop edition and 64-bit Server edition
+    "https://rhinolinux.org/", //ubuntu-based rolling release distro
+    "https://teejeetech.com/tag/zinc/" //ubuntu lts based distro with xfce as default
 
 ];
 
@@ -326,7 +328,7 @@ var debianlinks = [
     "http://ubuntuce.com/",
     "https://spirallinux.github.io/",
     "https://uwuntuos.site/",
-    "https://pikaos.ferreo.dev/",
+    "https://pika-os.com/",
     "https://escuelaslinux.sourceforge.io/english/index.html",
     "https://www.digi77.com/linux-kodachi/",
     "https://blends.debian.org/edu/",
@@ -338,7 +340,9 @@ var debianlinks = [
     "https://amaroklinux.org/",
     "https://www.linuxfx.org/",
     "https://www.linspirelinux.com/",
-    "https://kaisenlinux.org/"
+    "https://kaisenlinux.org/",
+    "https://rhinolinux.org/",
+    "https://teejeetech.com/tag/zinc/"
 
     
 ];

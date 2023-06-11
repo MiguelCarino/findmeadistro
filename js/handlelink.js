@@ -185,7 +185,9 @@ var links = [
     "https://4mlinux.com/", //Lighweight 32-bit Desktop edition and 64-bit Server edition
     "https://rhinolinux.org/", //ubuntu-based rolling release distro
     "https://teejeetech.com/tag/zinc/", //ubuntu lts based distro with xfce as default
-    "https://www.supergrubdisk.org/rescatux/" //Debian based distro for rescuiing borken installations
+    "https://www.supergrubdisk.org/rescatux/", //Debian based distro for rescuiing borken installations
+    "https://clearlinux.org/",
+    "https://github.com/microsoft/CBL-Mariner"
 
 ];
 
@@ -543,7 +545,9 @@ var otherlinks =[
     "https://easyos.org/",
     "https://nakst.gitlab.io/essence",
     "https://www.redox-os.org/",
-    "https://4mlinux.com/"
+    "https://4mlinux.com/",
+    "https://clearlinux.org/",
+    "https://github.com/microsoft/CBL-Mariner"
 ];
 
 var bsdlinks =[

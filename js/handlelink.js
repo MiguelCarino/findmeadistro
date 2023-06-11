@@ -10,6 +10,7 @@ var links = [
     "https://www.gentoo.org/",
     "https://linuxmint.com/",
     "https://getfedora.org/",
+    "https://www.suse.com/",
     "https://developers.redhat.com/products/rhel/download",
     "https://os.gnome.org/",
     "https://manjaro.org/",
@@ -496,6 +497,7 @@ var EOLredhatlinks = [
 ];
 
 var suselinks = [ //there aren't a lot of suse unfortunetly 
+    "https://www.suse.com/",
     "https://www.opensuse.org/",
     "https://geckolinux.github.io/",
     "https://easynas.org/",

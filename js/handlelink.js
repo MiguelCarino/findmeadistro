@@ -94,7 +94,7 @@ var links = [
     "https://puppylinux.com/",
     "https://openwrt.org/",
     "https://nixos.org/",
-    "https://www.mklinux.org/",
+    "http://www.mklinux.org/", //They stopped having a certificate
     "http://www.dragora.org/en/index.html",
     "https://crux.nu/",
     "https://www.alpinelinux.org/",
@@ -528,7 +528,7 @@ var otherlinks =[
     "https://puppylinux.com/",
     "https://openwrt.org/",
     "https://nixos.org/",
-    "https://www.mklinux.org/",
+    "http://www.mklinux.org/",
     "http://www.dragora.org/en/index.html",
     "https://crux.nu/",
     "https://www.alpinelinux.org/",

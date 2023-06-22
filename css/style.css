@@ -61,10 +61,10 @@ body{
 
 .BigTitle{
     font-family: 'Varela Round';
-    font-size: 100px;
+    font-size: 90px;
     text-align: center;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .smallerTitle{
@@ -73,7 +73,7 @@ body{
     color: grey;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     position: relative;
 }
 
@@ -126,7 +126,7 @@ footer{
     font-size: 15px;
     position: relative;
     top: 0px;
-    left: -20px;
+    left: 0px;
     text-align: center;
     display: grid;
     justify-content: center;

@@ -69,7 +69,7 @@ var links = [
     "https://archlabslinux.com/",
     "https://www.blackarch.org/",
     "https://endeavouros.com/",
-    "https://www.frugalware.org/",
+    //"https://www.frugalware.org/", //Its website isn't displaying properly
     "https://www.hyperbola.info/",
     "https://www.calculate-linux.org/",
     "https://www.chromium.org/chromium-os",
@@ -403,7 +403,7 @@ var archlinks = [
     "https://archlabslinux.com/",
     "https://www.blackarch.org/",
     "https://endeavouros.com/",
-    "https://www.frugalware.org/",
+    //"https://www.frugalware.org/",
     "https://www.hyperbola.info/",
     "https://www.parabola.nu/",
     "https://instantos.io",

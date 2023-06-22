@@ -107,7 +107,7 @@ var links = [
     "https://maboxlinux.org/",
     "https://ferenos.weebly.com/",
     "https://rebornos.org/",
-    "https://endlessos.com/home/",
+    "https://www.endlessos.org/os",
     "https://www.elivecd.org/",
     "https://q4os.org/index.html",
     "https://reactos.org/",
@@ -129,7 +129,7 @@ var links = [
     "https://almalinux.org",
     "https://ibuntuos.com",
     "https://nxos.org/", //System-d free Debian based
-    "https://ultramarine-linux.org",
+    "https://ultramarine-linux.org", //Fedora based distro with easier setup out of the box
     "https://cutefish-ubuntu.github.io/",
     "https://www.ghostbsd.org/",
     "https://www.freebsd.org/",
@@ -187,8 +187,13 @@ var links = [
     "https://teejeetech.com/tag/zinc/", //ubuntu lts based distro with xfce as default
     "https://www.supergrubdisk.org/rescatux/", //Debian based distro for rescuiing borken installations
     "https://clearlinux.org/",
-    "https://github.com/microsoft/CBL-Mariner"
-
+    "https://github.com/microsoft/CBL-Mariner",
+    "https://xerolinux.xyz/",
+    "https://www.tuxedocomputers.com/",
+    "https://en.euro-linux.com/eurolinux", //Polish RHEL compatible system
+    "https://risi.io/", //Fedora based distro with easier setup out of the box
+    "https://exodia-os.github.io/exodia-website", //Arch based distro for cibersecurity
+    "https://www.kumander.org/" //Debian based aiming to look like Windows 7
 ];
 
 var EOLlinks = [
@@ -317,7 +322,7 @@ var debianlinks = [
     "https://armbian.com",
     "https://qntm.org/suicide",
     "https://ferenos.weebly.com/",
-    "https://endlessos.com/home/",
+    "https://www.endlessos.org/os",
     "https://www.elivecd.org/",
     "https://q4os.org/index.html",
     "https://voyagerlive.org/",
@@ -347,7 +352,9 @@ var debianlinks = [
     "https://rhinolinux.org/",
     "https://teejeetech.com/tag/zinc/",
     "https://draugeros.org/",
-    "https://www.supergrubdisk.org/rescatux/"
+    "https://www.supergrubdisk.org/rescatux/",
+    "https://www.tuxedocomputers.com/",
+    "https://www.kumander.org/"
 
     
 ];
@@ -409,7 +416,9 @@ var archlinks = [
     "https://getcryst.al/site",
     "https://pearos.xyz/",
     "https://blendos.co/",
-    "https://cachyos.org/"
+    "https://cachyos.org/",
+    "https://xerolinux.xyz/",
+    "https://exodia-os.github.io/exodia-website"
 ];
 
 var EOLarchlinks = [
@@ -483,7 +492,9 @@ var redhatlinks = [
     "https://berry-lab.net/",
     "https://sourceforge.net/projects/xange/", //Kedora
     "https://img.cs.montana.edu/linux/montanalinux/", //Montana Linux
-    "https://www.miraclelinux.com/" //Japanese RHEL compatible system
+    "https://www.miraclelinux.com/", //Japanese RHEL compatible system
+    "https://en.euro-linux.com/eurolinux",
+    "https://risi.io/"
 ];
 
 var EOLredhatlinks = [

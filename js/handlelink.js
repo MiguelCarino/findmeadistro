@@ -170,7 +170,8 @@ var links = [
     "https://easyos.org/", //Experimental Linux distribution made by Puppy Linux's maintainer
     "https://www.plamolinux.org/", //Slackware-based
     "http://www.omoikane.co.jp/", //Debian-based Japanese distro meant for business support through licensing
-    "https://fuguita.org/" //OpenBSD-based live system
+    "https://fuguita.org/", //OpenBSD-based live system
+    "https://exodia-os.github.io/exodia-website/" //arch-based distro For All Cybersecurity fields 
 ];
 
 var EOLlinks = [
@@ -378,7 +379,8 @@ var archlinks = [
     "https://arcolinuxb.com/",
     "https://rebornos.org/",
     "https://getcryst.al/site",
-    "https://pearos.xyz/"
+    "https://pearos.xyz/",
+    "https://exodia-os.github.io/exodia-website/"
 ];
 
 var EOLarchlinks = [

@@ -356,7 +356,7 @@ var debianlinks = [
     "https://www.supergrubdisk.org/rescatux/",
     "https://www.tuxedocomputers.com/",
     "https://www.kumander.org/",
-    "https://www.openkylin.top/downloads/
+    "https://www.openkylin.top/downloads/"
 
     
 ];

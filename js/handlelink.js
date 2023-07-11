@@ -193,7 +193,8 @@ var links = [
     "https://en.euro-linux.com/eurolinux", //Polish RHEL compatible system
     "https://risi.io/", //Fedora based distro with easier setup out of the box
     "https://exodia-os.github.io/exodia-website", //Arch based distro for cibersecurity
-    "https://www.kumander.org/" //Debian based aiming to look like Windows 7
+    "https://www.kumander.org/", //Debian based aiming to look like Windows 7
+    "https://www.openkylin.top/downloads/" //Chinese distro, most probably sucessor of ubuntu kylin
 ];
 
 var EOLlinks = [
@@ -354,7 +355,8 @@ var debianlinks = [
     "https://draugeros.org/",
     "https://www.supergrubdisk.org/rescatux/",
     "https://www.tuxedocomputers.com/",
-    "https://www.kumander.org/"
+    "https://www.kumander.org/",
+    "https://www.openkylin.top/downloads/
 
     
 ];

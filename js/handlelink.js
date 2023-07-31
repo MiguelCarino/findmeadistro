@@ -194,7 +194,8 @@ var links = [
     "https://risi.io/", //Fedora based distro with easier setup out of the box
     "https://exodia-os.github.io/exodia-website", //Arch based distro for cibersecurity
     "https://www.kumander.org/", //Debian based aiming to look like Windows 7
-    "https://www.openkylin.top/downloads/" //Chinese distro, most probably sucessor of ubuntu kylin
+    "https://www.openkylin.top/downloads/", //Chinese distro, most probably sucessor of ubuntu kylin
+    "https://loc-os.sourceforge.io/" //Debian 11 based distro meant for old harwdware
 ];
 
 var EOLlinks = [
@@ -356,7 +357,8 @@ var debianlinks = [
     "https://www.supergrubdisk.org/rescatux/",
     "https://www.tuxedocomputers.com/",
     "https://www.kumander.org/",
-    "https://www.openkylin.top/downloads/"
+    "https://www.openkylin.top/downloads/",
+    "https://loc-os.sourceforge.io/"
 
     
 ];

@@ -480,7 +480,7 @@ var EOLslacklinks = [
     "https://archiveos.org/rivendell/"
 ];
 
-var redhatlinks = [
+var fedoralinks = [
     "https://getfedora.org/",
     "https://developers.redhat.com/products/rhel/download",
     "https://www.centos.org/",
@@ -503,7 +503,7 @@ var redhatlinks = [
     "https://risi.io/"
 ];
 
-var EOLredhatlinks = [
+var EOLfedoralinks = [
     "https://archiveos.org/redstar/",
     "https://archiveos.org/linux-xp/",
     "https://archiveos.org/yellowdog/",

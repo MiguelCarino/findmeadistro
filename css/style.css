@@ -1,26 +1,26 @@
-html{
+html {
     width: 100vw
 }
 
-:root{
+:root {
     --main-color: #1C1C1C;
     --main-text-color: lightgrey;
     --main-background: #2D2D2D;
     --main-bigtitle: white;
 }
 
-body{
+body {
     background-color: var(--main-color);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
-@font-face{
+@font-face {
     font-family: "Varela Round";
     src: url("../font/Varela_Round/VarelaRound-Regular.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "Roboto";
     src: url("../font/Roboto/Roboto-Thin.ttf");
 }
@@ -32,14 +32,14 @@ body{
 }
 */
 
-#random-button{
+#random-button {
     font-family: 'Varela Round';
     font-size: 25px;
     text-align: center;
-    width:400px;
-    height:80px;
+    width: 400px;
+    height: 80px;
     border-radius: 10px;
-    border:2px solid white;
+    border: 2px solid white;
     outline: none;
     margin-bottom: 250px;
     transition: transform .2s;
@@ -47,11 +47,11 @@ body{
 }
 
 
-#random-button:hover{
+#random-button:hover {
     transform: scale(1.02);
 }
 
-.content{
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@ body{
     top: 0%;
 }
 
-.BigTitle{
+.BigTitle {
     font-family: 'Varela Round';
     font-size: 90px;
     text-align: center;
@@ -67,7 +67,7 @@ body{
     margin-bottom: 5px;
 }
 
-.smallerTitle{
+.smallerTitle {
     font-family: 'Varela Round';
     font-style: italic;
     color: grey;
@@ -77,51 +77,51 @@ body{
     position: relative;
 }
 
-footer{
+footer {
     position: static;
     bottom: 0;
     clear: both;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     justify-content: center;
 }
 
-.suggestions{
+.suggestions {
     font-family: 'Anonymous Pro', monospace;
     outline: none;
     background: none;
-    border:none;
+    border: none;
     color: var(--main-text-color);
     font-size: 15px;
     cursor: pointer;
-    cursor:pointer;
+    cursor: pointer;
     position: relative;
     right: -50px;
     bottom: 15px;
 }
 
-.GH{
+.GH {
     cursor: pointer;
     position: relative;
     left: -100px;
     bottom: -20px;
-    border:none;
+    border: none;
     outline: none;
     background-color: none;
-    background:none;
+    background: none;
     filter: brightness(150%);
     transition: filter .1s;
 }
 
-.GH:hover{
-    filter:brightness(200%);
+.GH:hover {
+    filter: brightness(200%);
 }
 
-.creditsanddate{
-    font-family: 'Roboto';    
+.creditsanddate {
+    font-family: 'Roboto';
     color: var(--main-text-color);
     font-size: 15px;
     position: relative;
@@ -135,19 +135,19 @@ footer{
 
 /*buttons*/
 @media only screen and (max-width: 768px) {
-    .FMALDportal{
+    .FMALDportal {
         scale: 70%;
     }
 }
-  
+
 @media only screen and (max-width: 320px) {
-    .FMALDportal{
+    .FMALDportal {
         scale: 50%;
         left: -120px;
     }
 }
 
-.FMALDportal{
+.FMALDportal {
     position: relative;
     display: grid;
     margin-left: auto;
@@ -161,7 +161,7 @@ footer{
     border-radius: 5px;
 }
 
-.FMALDportal .tip{
+.FMALDportal .tip {
     font-family: "Varela Round";
     font-size: 12px;
     visibility: hidden;
@@ -178,7 +178,7 @@ footer{
     bottom: 125%;
     left: 50%;
     margin-left: -60px;
-  
+
     /* Fade in tooltip */
     opacity: 0;
     transition: opacity 0.3s;
@@ -194,14 +194,14 @@ footer{
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
+
+/* Show the tooltip text when you mouse over the tooltip container */
 .FMALDportal:hover .tip {
     visibility: visible;
     opacity: 1;
 }
 
-.FMALDportal button{
+.FMALDportal button {
     font-family: "Anonymous Pro", monospace;
     color: white;
     text-align: center;
@@ -219,55 +219,55 @@ footer{
 }
 
 
-.FMALDALL{
+.FMALDALL {
     left: 5px;
 }
 
-.FMALDDEBIAN{
+.FMALDDEBIAN {
     left: 65px;
 }
 
-.FMALDARCH{
+.FMALDARCH {
     left: 125px;
 }
 
-.FMALDGENTOO{
+.FMALDGENTOO {
     left: 185px;
 }
 
-.FMALDREDHAT{
+.FMALDFEDORA {
     left: 245px;
 }
 
-.FMALDSUSE{
+.FMALDSUSE {
     left: 305px;
 }
 
-.FMALDSLACK{
+.FMALDSLACK {
     left: 365px;
 }
 
-.FMALDBSD{
+.FMALDBSD {
     left: 425px;
 }
 
-.FMALDOTHER{
+.FMALDOTHER {
     left: 485px;
 }
 
-.FMALDEOL{
+.FMALDEOL {
     left: 545px;
 }
 
-hr{
-    position:absolute;
+hr {
+    position: absolute;
     left: 480px;
     background-color: #fff;
     border-radius: 5px;
-    border:none;
+    border: none;
 }
 
-.EOLsettings button{
+.EOLsettings button {
     font-family: "Anonymous Pro", monospace;
     color: white;
     text-align: center;
@@ -283,19 +283,19 @@ hr{
     cursor: pointer;
 }
 
-.EOLon{
+.EOLon {
     left: 5px;
 }
 
-.EOLoff{
+.EOLoff {
     left: 65px;
 }
 
-.EOLonly{
+.EOLonly {
     left: 125px;
 }
 
-.EOLsettings{
+.EOLsettings {
     position: relative;
     display: grid;
     margin-left: auto;
@@ -309,7 +309,7 @@ hr{
     border-radius: 5px;
 }
 
-.EOLsettings .tip{
+.EOLsettings .tip {
     font-family: "Varela Round";
     font-size: 12px;
     visibility: hidden;
@@ -325,13 +325,13 @@ hr{
     bottom: -120%;
     left: 30%;
     margin-left: -60px;
-  
+
     /* Fade in tooltip */
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-.EOLsettings .tip ::after{
+.EOLsettings .tip ::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -347,9 +347,9 @@ hr{
     opacity: 1;
 }
 
-#dmbutton{
+#dmbutton {
     background-color: none;
-    background:none;
+    background: none;
     outline: none;
     border: none;
     width: 40px;
@@ -363,11 +363,11 @@ hr{
     cursor: pointer;
 }
 
-#dmbutton:hover{
+#dmbutton:hover {
     filter: brightness(150%);
 }
 
-#dmimg{
+#dmimg {
     width: 40px;
     height: 40px;
     cursor: pointer;

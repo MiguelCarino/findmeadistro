@@ -66,10 +66,10 @@ var links = [
     "http://www.damnsmalllinux.org/",
     "https://archbang.org/",
     "https://artixlinux.org/",
-    "https://archlabslinux.com/",
+    //"https://archlabslinux.com/", //Not there anymore
     "https://www.blackarch.org/",
     "https://endeavouros.com/",
-    //"https://www.frugalware.org/", //Its website isn't displaying properly
+    "https://www.frugalware.org/",
     "https://www.hyperbola.info/",
     "https://www.calculate-linux.org/",
     "https://www.chromium.org/chromium-os",
@@ -87,7 +87,7 @@ var links = [
     "https://www.gobolinux.org/",
     "https://draugeros.org/", //Ubuntu based gaming distro
     "https://voidlinux.org/",
-    "http://www.toms.net/rb/",
+    //"http://www.toms.net/rb/", //Not there anymore
     "http://www.tinycorelinux.net/",
     "https://getsol.us/",
     "https://slitaz.org/en/",
@@ -117,15 +117,14 @@ var links = [
     "https://voyagerlive.org/", //who ever made this website really needs improve their image quality and stretch resolution :/ 
     "https://www.bunsenlabs.org/",
     "https://lxle.net/",
-    "https://tos.odex.be/",
+    //"https://tos.odex.be/", //Not there anymore
     "https://thinstation.github.io/thinstation/",
     "https://sourceforge.net/projects/rebeccablackos/", //Rebecca Black operating system 
-    "https://caixamagica.pt/en/linux-cm",
+    //"https://caixamagica.pt/en/linux-cm", //Not available anymore
     "https://easynas.org/",
     "https://arcolinux.com/",
     "https://arcolinuxb.com/", //this linux has two different websites
     "https://regolith-linux.org/",
-    "https://silverblue.fedoraproject.org/",
     "https://almalinux.org",
     "https://ibuntuos.com",
     "https://nxos.org/", //System-d free Debian based
@@ -148,14 +147,14 @@ var links = [
     "https://linuxkamarada.com/",
     "https://berry-lab.net/",
     "https://sourceforge.net/projects/xange/", //Kedora
-    "https://img.cs.montana.edu/linux/montanalinux/",//Montana Linux
-    "https://www.regataos.com", //Based on OpenSuse Leap
+    "https://img.cs.montana.edu/linux/montanalinux/", //Montana Linux
+    "https://get.regataos.com.br/", //Based on OpenSuse Leap
     "https://archhurd.org/", //Arch based on GNUHurd
-    "https://www.freenix.net/",//Slackware with non-free packages
+    "https://www.freenix.net/", //Slackware with non-free packages
     "https://ravynos.com/",
-    "https://uwuntuos.site/",//uwu
+    "https://uwuntuos.site/", //uwu
     "https://www.miraclelinux.com/",
-    "https://getcryst.al/site",//Arch distro with GNOME and Amethyst AUR helper
+    "https://getcryst.al/site", //Arch distro with GNOME and Amethyst AUR helper
     "https://escuelaslinux.sourceforge.io/english/index.html", //Based on Bodhi, designed for preschool
     "https://liguros.gitlab.io/", //Gentoo based
     "https://pika-os.com/", //Gaming Ubuntu based distro with Nobara Tweaks
@@ -163,7 +162,7 @@ var links = [
     "https://pearos.xyz/", //macos like Arch
     "https://chimera-linux.org/",
     "https://venomlinux.org/",
-    "https://kisslinux.org/",
+    //"https://kisslinux.org/", //Nothing there
     "https://www.digi77.com/linux-kodachi/", //anti-forensic and anonymous distro based on Debian
     "https://blends.debian.org/edu/",
     "https://easyos.org/", //Experimental Linux distribution made by Puppy Linux's maintainer
@@ -171,7 +170,7 @@ var links = [
     "http://www.omoikane.co.jp/", //Debian-based Japanese distro meant for business support through licensing
     "https://fuguita.org/", //OpenBSD-based live system
     "https://vanillaos.org/",
-    "https://flatpakremix.org/", //Ubuntu with flatpak instead of snap
+    //"https://flatpakremix.org/", //Ubuntu with flatpak instead of snap //Nothing there
     "https://www.caine-live.net/", //Computer forensics distro based on Ubuntu
     "https://br-os.com/",
     "https://amaroklinux.org/",
@@ -187,19 +186,21 @@ var links = [
     "https://teejeetech.com/tag/zinc/", //ubuntu lts based distro with xfce as default
     "https://www.supergrubdisk.org/rescatux/", //Debian based distro for rescuiing borken installations
     "https://clearlinux.org/",
-    "https://github.com/microsoft/CBL-Mariner",
-    "https://xerolinux.xyz/",
+    "https://github.com/microsoft/azurelinux",
+    //"https://xerolinux.xyz/", //Will become into a post-installation tool
     "https://www.tuxedocomputers.com/",
     "https://en.euro-linux.com/eurolinux", //Polish RHEL compatible system
     "https://risi.io/", //Fedora based distro with easier setup out of the box
     "https://exodia-os.github.io/exodia-website", //Arch based distro for cibersecurity
     "https://www.kumander.org/", //Debian based aiming to look like Windows 7
     "https://www.openkylin.top/downloads/", //Chinese distro, most probably sucessor of ubuntu kylin
-    "https://loc-os.sourceforge.io/" //Debian 11 based distro meant for old harwdware
+    "https://loc-os.com/", //Debian 11 based distro meant for old harwdware
+    "https://wubuntu.org/", //Another Ubuntu LTS distro with paid support
+    "https://arkanelinux.org/" //Arch based immutable distro with default GNOME
 ];
 
 var EOLlinks = [
-    "https://archiveos.org/redstar/", 
+    "https://archiveos.org/redstar/",
     //RedStarOS's website's inactive directory is called www.naenara.com.kp/en/kcc/ and naenara in korea means my country (내나라) pretty creative I guess
     "http://hannahmontana.sourceforge.net/", //yes.
     "https://archiveos.org/linux-xp/",
@@ -344,7 +345,7 @@ var debianlinks = [
     "https://blends.debian.org/edu/",
     "http://www.omoikane.co.jp/",
     "https://vanillaos.org/",
-    "https://flatpakremix.org/",
+    //"https://flatpakremix.org/",
     "https://www.caine-live.net/",
     "https://br-os.com/",
     "https://amaroklinux.org/",
@@ -358,9 +359,10 @@ var debianlinks = [
     "https://www.tuxedocomputers.com/",
     "https://www.kumander.org/",
     "https://www.openkylin.top/downloads/",
-    "https://loc-os.sourceforge.io/"
+    "https://loc-os.com/",
+    "https://wubuntu.org/"
 
-    
+
 ];
 
 var EOLdebianlinks = [
@@ -404,16 +406,16 @@ var archlinks = [
     "https://manjaro.org/",
     "https://archbang.org/",
     "https://artixlinux.org/",
-    "https://archlabslinux.com/",
+    //"https://archlabslinux.com/", //Not there anymore
     "https://www.blackarch.org/",
     "https://endeavouros.com/",
-    //"https://www.frugalware.org/",
+    "https://www.frugalware.org/",
     "https://www.hyperbola.info/",
     "https://www.parabola.nu/",
     "https://instantos.io",
     "https://maboxlinux.org/",
     "https://garudalinux.org/",
-    "https://tos.odex.be/",
+    //"https://tos.odex.be/", //Not there anymore
     "https://arcolinux.com/",
     "https://arcolinuxb.com/",
     "https://rebornos.org/",
@@ -421,8 +423,9 @@ var archlinks = [
     "https://pearos.xyz/",
     "https://blendos.co/",
     "https://cachyos.org/",
-    "https://xerolinux.xyz/",
-    "https://exodia-os.github.io/exodia-website"
+    //"https://xerolinux.xyz/",
+    "https://exodia-os.github.io/exodia-website",
+    "https://arkanelinux.org/"
 ];
 
 var EOLarchlinks = [
@@ -456,7 +459,7 @@ var EOLgentoolinks = [
     "https://archiveos.org/bintoo/",
     "https://archiveos.org/phaeronix/",
     "https://archiveos.org/bitdefender/"
-]; 
+];
 
 var slacklinks = [
     "http://www.slackware.com/",
@@ -467,7 +470,7 @@ var slacklinks = [
     "http://www.porteus.org/",
     "https://www.dnalinux.com/",
     "http://www.zenwalk.org/",
-    "https://www.freenix.net/",//Slackware with non-free packages
+    "https://www.freenix.net/", //Slackware with non-free packages
     "https://www.plamolinux.org/"
 ];
 
@@ -489,7 +492,6 @@ var redhatlinks = [
     "https://www.rosalinux.ru/en/home-2/",
     "https://www.pclinuxos.com/",
     "https://en.altlinux.org/Downloads",
-    "https://silverblue.fedoraproject.org/",
     "https://almalinux.org",
     "https://ultramarine-linux.org",
     "https://rockylinux.org/",
@@ -502,7 +504,7 @@ var redhatlinks = [
 ];
 
 var EOLredhatlinks = [
-    "https://archiveos.org/redstar/", 
+    "https://archiveos.org/redstar/",
     "https://archiveos.org/linux-xp/",
     "https://archiveos.org/yellowdog/",
     "http://berry.osdn.jp/",
@@ -519,7 +521,7 @@ var suselinks = [ //there aren't a lot of suse unfortunetly
     "https://geckolinux.github.io/",
     "https://easynas.org/",
     "https://linuxkamarada.com/", //Current version is 15.3, while openSuse Leap is 15.4, if it gets behind another version it will be considered EOL
-    "https://www.regataos.com/"
+    "https://get.regataos.com.br/"
 ];
 
 var EOLsuselinks = [
@@ -529,15 +531,15 @@ var EOLsuselinks = [
     "https://archiveos.org/kde-four-live/",
     "https://www.stresslinux.org/sl/",
     "https://archiveos.org/astaro/"
-]; 
+];
 
-var otherlinks =[
+var otherlinks = [
     "http://www.lunar-linux.org/",
     "https://guix.gnu.org/",
     "https://www.foresightlinux.org/",
     "https://www.gobolinux.org/",
     "https://voidlinux.org/",
-    "http://www.toms.net/rb/",
+    //"http://www.toms.net/rb/", //Not anymore
     "http://www.tinycorelinux.net/",
     "https://slitaz.org/en/",
     "https://puppylinux.com/",
@@ -556,16 +558,16 @@ var otherlinks =[
     "http://collapseos.org/",
     "https://archhurd.org/",
     "https://venomlinux.org/",
-    "https://kisslinux.org/",
+    //"https://kisslinux.org/", //Nothing there
     "https://easyos.org/",
     "https://nakst.gitlab.io/essence",
     "https://www.redox-os.org/",
     "https://4mlinux.com/",
     "https://clearlinux.org/",
-    "https://github.com/microsoft/CBL-Mariner"
+    "https://github.com/microsoft/azurelinux"
 ];
 
-var bsdlinks =[
+var bsdlinks = [
     "https://www.ghostbsd.org/",
     "https://www.freebsd.org/",
     "https://www.openbsd.org/",
@@ -579,7 +581,7 @@ var bsdlinks =[
     "https://fuguita.org/"
 ];
 
-var EOLbsdlinks =[
+var EOLbsdlinks = [
     "https://www.ghostbsd.org/",
     "https://www.freebsd.org/",
     "https://www.openbsd.org/",
@@ -593,10 +595,10 @@ var EOLotherlinks = [
     "https://archiveos.org/kateos/",
     "https://archiveos.org/caldera/",
     "https://archiveos.org/lps/",
-    "https://emmett31.wixsite.com/lightninglinux",//parent unknown. come back to it later
+    "https://emmett31.wixsite.com/lightninglinux", //parent unknown. come back to it later
     "https://archiveos.org/netlinx/",
     "https://archiveos.org/alinux/",
-    "http://biebian.sourceforge.net/", 
+    "http://biebian.sourceforge.net/",
     //yeah it turns out biebian is not part of Debian or Ubuntu (shoking) it's acutally part of Puppy Linux which was part of a joke
     "https://blankon.id/", //parent distribution uknown, check out later
     "https://archiveos.org/saluki/",

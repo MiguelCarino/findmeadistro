@@ -189,7 +189,7 @@ var links = [
     "https://github.com/microsoft/azurelinux",
     //"https://xerolinux.xyz/", //Will become into a post-installation tool
     "https://www.tuxedocomputers.com/",
-    "https://en.euro-linux.com/eurolinux", //Polish RHEL compatible system
+    "https://euro-linux.com/en/software/eurolinux/", //Polish RHEL compatible system
     "https://risi.io/", //Fedora based distro with easier setup out of the box
     "https://exodia-os.github.io/exodia-website", //Arch based distro for cibersecurity
     "https://www.kumander.org/", //Debian based aiming to look like Windows 7
@@ -499,7 +499,7 @@ var fedoralinks = [
     "https://sourceforge.net/projects/xange/", //Kedora
     "https://img.cs.montana.edu/linux/montanalinux/", //Montana Linux
     "https://www.miraclelinux.com/", //Japanese RHEL compatible system
-    "https://en.euro-linux.com/eurolinux",
+    "https://euro-linux.com/en/software/eurolinux/",
     "https://risi.io/"
 ];
 

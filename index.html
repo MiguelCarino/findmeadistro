@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -11,8 +11,6 @@
 </head>
 
 <body onload="changeButtonColor()">
-    <script src="js/script.js"></script>
-    <script src="js/handlelink.js"></script>
     <h1 class="BigTitle" id="BigTitle">Find me a Distro</h1>
     <h3 class="smallerTitle">Discover a new distribution with a single click</h3>
     <div class="darkmode">
@@ -25,30 +23,37 @@
     </div>
     <div class="FMALDportal">
         <span class="tip">You can choose specific variant of distributions you want to see using this option</span>
-        <!-- number of items in fmald including index: 9-->
-        <button class="FMALDALL" id="FMALDALL" onclick="TOGGLEALL()">All</button>
-        <button class="FMALDDEBIAN" id="FMALDDEBIAN" onclick="TOGGLEDEBIAN()">DEBIAN</button>
-        <button class="FMALDARCH" id="FMALDARCH" onclick="TOGGLEARCH()">ARCH</button>
-        <button class="FMALDGENTOO" id="FMALDGENTOO" onclick="TOGGLEGENTOO()">GENTOO</button>
-        <button class="FMALDFEDORA" id="FMALDFEDORA" onclick="TOGGLEFEDORA()">FEDORA</button>
-        <button class="FMALDSUSE" id="FMALDSUSE" onclick="TOGGLESUSE()">SUSE</button>
-        <button class="FMALDSLACK" id="FMALDSLACK" onclick="TOGGLESLACK()">SLACK</button>
-        <button class="FMALDBSD" id="FMALDBSD" onclick="TOGGLEBSD()">BSD</button>
-        <button class="FMALDOTHER" id="FMALDOTHER" onclick="TOGGLEOTHER()">OTHER</button>
+        <button class="FMALDALL" id="FMALDALL" onclick="toggleDistro(1)">All</button>
+        <button class="FMALDDEBIAN" id="FMALDDEBIAN" onclick="toggleDistro(2)">DEBIAN</button>
+        <button class="FMALDARCH" id="FMALDARCH" onclick="toggleDistro(3)">ARCH</button>
+        <button class="FMALDGENTOO" id="FMALDGENTOO" onclick="toggleDistro(4)">GENTOO</button>
+        <button class="FMALDFEDORA" id="FMALDFEDORA" onclick="toggleDistro(5)">FEDORA</button>
+        <button class="FMALDSUSE" id="FMALDSUSE" onclick="toggleDistro(6)">SUSE</button>
+        <button class="FMALDSLACK" id="FMALDSLACK" onclick="toggleDistro(7)">SLACK</button>
+        <button class="FMALDBSD" id="FMALDBSD" onclick="toggleDistro(8)">BSD</button>
+        <button class="FMALDOTHER" id="FMALDOTHER" onclick="toggleDistro(9)">OTHER</button>
     </div>
     <div class="EOLsettings">
         <span class="tip">Option for EOL (End Of Life) Distributions</span>
-        <button class="EOLoff" id="EOLoff" onclick="TOGGLEEOLOFF()">EOL Off</button>
-        <button class="EOLon" id="EOLon" onclick="TOGGLEEOLON()">EOL On</button>
-        <button class="EOLonly" id="EOLonly" onclick="TOGGLEEOLONLY()">EOL Only</button>
+        <button class="EOLoff" id="EOLoff" onclick="toggleEOL(2)">EOL Off</button>
+        <button class="EOLon" id="EOLon" onclick="toggleEOL(1)">EOL On</button>
+        <button class="EOLonly" id="EOLonly" onclick="toggleEOL(3)">EOL Only</button>
     </div>
     <footer>
-        <button class="GH" onclick="relocateGithubHome()"><img src="img/GitHub_logo.png" width="50px" height="50px"></button>
+        <button class="GH" onclick="relocateGithubHome()">
+            <img src="img/GitHub_logo.png" width="50px" height="50px">
+        </button>
         <button class="suggestions" onclick="relocateGithub()">Suggestions?</button>
-        <h2 class="creditsanddate">© <script>
+        <h2 class="creditsanddate">© 
+            <script>
                 document.write(new Date().getFullYear());
-            </script>, This is a Fork of <a href="https://github.com/KripC2160/findmealinuxdistro">Find Me A Linux Distro Project by KripC</a></h2> <!-- the script automatically updates the year-->
+            </script>, This is a Fork of <a href="https://github.com/KripC2160/findmealinuxdistro">Find Me A Linux Distro Project by KripC</a>
+        </h2>
     </footer>
+
+    <!-- Load scripts in correct order -->
+    <script src="js/handlelink.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

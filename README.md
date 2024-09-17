@@ -3,5 +3,4 @@
 
 ![randomdistrofaviconbig](https://user-images.githubusercontent.com/65854891/114965351-62da4500-9eab-11eb-8f6c-47671ce58741.png)
 
-These distributions might be ones you know and use, remixes of distributions, country exclusive, and so much more. FMAD still needs more distributions, so if you have any distribution you want to be in the website, make sure to put them in the [issues](https://github.com/MiguelCarino/findmeadistro/issues). The Linux distributions however still are focused on ones that run on workstations mostly x86_64 architecture (Server images and other architectures may appear but are not the focus).
-Feedback is welcome.
+These distributions may include familiar options, remixes, country exclusives, and more. FMAD is seeking additional distributions, so if you have suggestions, please submit them in the [issues](https://github.com/MiguelCarino/findmeadistro/issues). Currently, the focus is on Linux distributions primarily for x86_64 workstations, though server images and other architectures may be included. Feedback is welcome.

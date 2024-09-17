@@ -191,12 +191,16 @@ var links = [
     "https://www.tuxedocomputers.com/",
     "https://euro-linux.com/en/software/eurolinux/", //Polish RHEL compatible system
     "https://risi.io/", //Fedora based distro with easier setup out of the box
-    "https://exodia-os.github.io/exodia-website", //Arch based distro for cibersecurity
+    "https://exodia-os.github.io/", //Arch based distro for cibersecurity
     "https://www.kumander.org/", //Debian based aiming to look like Windows 7
     "https://www.openkylin.top/downloads/", //Chinese distro, most probably sucessor of ubuntu kylin
     "https://loc-os.com/", //Debian 11 based distro meant for old harwdware
     "https://wubuntu.org/", //Another Ubuntu LTS distro with paid support
-    "https://arkanelinux.org/" //Arch based immutable distro with default GNOME
+    "https://arkanelinux.org/", //Arch based immutable distro with default GNOME
+    "https://fedora-asahi-remix.org/", //Asahi Linux project + Fedora Linux
+    "https://getaurora.dev/", //Ublue (Fedora atomica) based
+    "https://projectbluefin.io/", //Ublue (Fedora atomica) based
+    "https://bazzite.gg/" //Ublue (Fedora atomica) based
 ];
 
 var EOLlinks = [
@@ -424,7 +428,7 @@ var archlinks = [
     "https://blendos.co/",
     "https://cachyos.org/",
     //"https://xerolinux.xyz/",
-    "https://exodia-os.github.io/exodia-website",
+    "https://exodia-os.github.io/",
     "https://arkanelinux.org/"
 ];
 
@@ -500,7 +504,12 @@ var fedoralinks = [
     "https://img.cs.montana.edu/linux/montanalinux/", //Montana Linux
     "https://www.miraclelinux.com/", //Japanese RHEL compatible system
     "https://euro-linux.com/en/software/eurolinux/",
-    "https://risi.io/"
+    "https://risi.io/",
+    "https://nobaraproject.org/",
+    "https://fedora-asahi-remix.org/",
+    "https://getaurora.dev/",
+    "https://projectbluefin.io/",
+    "https://bazzite.gg/"
 ];
 
 var EOLfedoralinks = [
@@ -511,8 +520,7 @@ var EOLfedoralinks = [
     'https://vinelinux.org/',
     "https://archiveos.org/asplinux/",
     "https://archiveos.org/tao/",
-    "https://archiveos.org/startcom/",
-    "https://nobaraproject.org/"
+    "https://archiveos.org/startcom/"
 ];
 
 var suselinks = [ //there aren't a lot of suse unfortunetly 

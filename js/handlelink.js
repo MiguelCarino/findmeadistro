@@ -78,10 +78,10 @@ var links = {
             "https://www.linspirelinux.com/",
             "https://kaisenlinux.org/", //Debian-based distro for IT diagnostics
             "https://rhinolinux.org/", //ubuntu-based rolling release distro
-            "https://teejeetech.com/tag/zinc/", //ubuntu lts based distro with xfce as default
+            //"https://teejeetech.com/tag/zinc/", //ubuntu lts based distro with xfce as default, it has been renamed or removed
             "https://draugeros.org/", //Ubuntu based gaming distro
             "https://www.supergrubdisk.org/rescatux/", //Debian based distro for rescuiing broken installations
-            "https://www.tuxedocomputers.com/",
+            //"https://www.tuxedocomputers.com/", //Linux hardware vendor, not a distro
             "https://www.kumander.org/", //Debian based aiming to look like Windows 7
             "https://www.openkylin.top/downloads/",
             "https://loc-os.com/", //Debian 11 based distro meant for old harwdware
@@ -198,7 +198,7 @@ var links = {
             "https://openwrt.org/",
             "https://nixos.org/",
             "http://www.mklinux.org/",
-            "http://www.dragora.org/en/index.html",
+            "https://www.dragora.org/",
             "https://crux.nu/",
             "https://www.alpinelinux.org/",
             "https://bedrocklinux.org/",

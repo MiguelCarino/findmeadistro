@@ -123,7 +123,8 @@ var links = {
             "https://www.system-rescue.org/Download/",
             "https://www.mocaccino.org",
             "https://liguros.gitlab.io/", //Gentoo based
-            "https://redcorelinux.org/" //Hardened Gentoo
+            "https://redcorelinux.org/", //Hardened Gentoo
+            "https://fydeos.io/" //De-googled Chromium
         ], // gentoo links
         5: [
             "https://getfedora.org/",

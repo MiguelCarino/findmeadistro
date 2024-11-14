@@ -56,7 +56,6 @@ var links = {
             "https://q4os.org/index.html",
             "https://voyagerlive.org/", //who ever made this website really needs improve their image quality and stretch resolution :/ 
             "https://www.bunsenlabs.org/",
-            "https://lxle.net/",
             "https://sourceforge.net/projects/rebeccablackos/", //Rebecca Black operating system 
             "https://regolith-linux.org/",
             "https://ibuntuos.com",
@@ -257,6 +256,8 @@ var links = {
             "https://archiveos.org/muriqui/",
             "https://www.jolicloud.com/jolios/",
             "https://www.backslashlinux.com/",
+            "https://lxle.net/",
+            "https://amaroklinux.org/",
             "https://amog-os.github.io/" //ඞ sus
         ], // eol debian links
         3: [

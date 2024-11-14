@@ -86,7 +86,8 @@ var links = {
             "https://www.openkylin.top/downloads/",
             "https://loc-os.com/", //Debian 11 based distro meant for old harwdware
             "https://wubuntu.org/",
-            "https://goldendoglinux.org/" //Debian based with gld alias for apt, Microsoft repo installed, and Plasma
+            "https://goldendoglinux.org/", //Debian based with gld alias for apt, Microsoft repo installed, and Plasma
+            "https://www.anduinos.com/" //Debian based with Ubuntu package approach
         ], // debian links
         3: [
             "https://archlinux.org/",

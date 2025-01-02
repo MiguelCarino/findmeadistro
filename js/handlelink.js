@@ -80,9 +80,10 @@ var links = {
             //"https://teejeetech.com/tag/zinc/", //ubuntu lts based distro with xfce as default, it has been renamed or removed
             "https://draugeros.org/", //Ubuntu based gaming distro
             "https://www.supergrubdisk.org/rescatux/", //Debian based distro for rescuiing broken installations
-            //"https://www.tuxedocomputers.com/", //Linux hardware vendor, not a distro
+            "https://www.tuxedocomputers.com/en/TUXEDO-OS_1.tuxedo", //Linux hardware vendor
             "https://www.kumander.org/", //Debian based aiming to look like Windows 7
-            "https://www.openkylin.top/downloads/",
+            "https://www.openkylin.top/downloads/", //Open Kylin, the whole Kylin family is a mess
+            "https://www.ubuntukylin.com/", //Ubuntu based Kylin
             "https://loc-os.com/", //Debian 11 based distro meant for old harwdware
             "https://wubuntu.org/",
             "https://goldendoglinux.org/", //Debian based with gld alias for apt, Microsoft repo installed, and Plasma
@@ -184,7 +185,8 @@ var links = {
             "https://hellosystem.github.io/",
             "https://ravynos.com/",
             "https://chimera-linux.org/",
-            "https://fuguita.org/"
+            "https://fuguita.org/",
+            "https://opnsense.org/" //firewall distro based on hardenedBSD, which is freebsd-based
         ], // bsd links
         9: [
             "http://www.lunar-linux.org/",

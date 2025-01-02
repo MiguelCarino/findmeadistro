@@ -16,7 +16,7 @@ var links = {
             "https://www.raspberrypi.org/software/",
             "https://github.com/theVakhovskeIsTaken/holoiso",
             "https://www.pureos.net/",
-            "https://astralinux.ru/en/",
+            "https://astralinux.ru/en/software-services/os/", //latest version is from 2023, will delete mid 2025 if not updated
             "https://www.parrotsec.org/",
             "https://lubuntu.me/",
             "https://ubuntubudgie.org/",
@@ -95,7 +95,7 @@ var links = {
             "https://archbang.org/",
             "https://artixlinux.org/",
             //"https://archlabslinux.com/", //Not there anymore
-            "https://www.blackarch.org/",
+            //"https://www.blackarch.org/", //404 - Will be removed next time
             "https://endeavouros.com/",
             "https://www.frugalware.org/",
             "https://www.hyperbola.info/",
@@ -124,7 +124,7 @@ var links = {
             "https://www.system-rescue.org/Download/",
             "https://www.mocaccino.org",
             "https://liguros.gitlab.io/", //Gentoo based
-            "https://redcorelinux.org/", //Hardened Gentoo
+            "https://redcorelinux.org/", //Hardened Gentoo based on its testing branch
             "https://fydeos.io/" //De-googled Chromium
         ], // gentoo links
         5: [
@@ -134,7 +134,6 @@ var links = {
             "https://www.openmandriva.org/",
             "https://www.clearos.com/",
             "https://www.oracle.com/linux/",
-            "https://scientificlinux.org/",
             "https://www.mageia.org/en/",
             "https://www.rosalinux.ru/en/home-2/",
             "https://www.pclinuxos.com/",
@@ -146,7 +145,7 @@ var links = {
             "https://sourceforge.net/projects/xange/", //Kedora
             "https://img.cs.montana.edu/linux/montanalinux/", //Montana Linux
             "https://www.miraclelinux.com/", //Japanese RHEL compatible system
-            "https://euro-linux.com/en/software/eurolinux/", //Polish RHEL compatible system
+            //"https://euro-linux.com/en/software/eurolinux/", //404 - Polish RHEL compatible system, not developing the distro anymore
             "https://risi.io/",
             "https://nobaraproject.org/",
             "https://fedora-asahi-remix.org/", //Asahi Linux project + Fedora Linux
@@ -289,7 +288,8 @@ var links = {
             "https://vinelinux.org/",
             "https://archiveos.org/asplinux/",
             "https://archiveos.org/tao/",
-            "https://archiveos.org/startcom/"
+            "https://archiveos.org/startcom/",
+            "https://scientificlinux.org/" //Reached EOL on June 30, 2024
         ], // eol fedora links
         6: [
             "https://archiveos.org/united/",

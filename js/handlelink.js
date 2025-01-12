@@ -113,7 +113,8 @@ var links = {
             "https://cachyos.org/",
             //"https://xerolinux.xyz/",
             "https://exodia-os.github.io/", //Arch based distro for cibersecurity
-            "https://arkanelinux.org/" //Arch based immutable distro with default GNOME
+            "https://arkanelinux.org/", //Arch based immutable distro with default GNOME
+            "https://nyarchlinux.moe/"
         ], // arch links
         4: [
             "https://www.gentoo.org/",

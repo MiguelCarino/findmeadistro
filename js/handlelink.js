@@ -157,7 +157,6 @@ var links = {
             "http://www.slackware.com/",
             "https://nimblex.net/",
             "https://salixos.org/",
-            "http://topologi-linux.sourceforge.net/",
             "http://www.porteus.org/",
             "https://www.dnalinux.com/", //Container, not distro
             "https://www.plamolinux.org/"
@@ -304,6 +303,7 @@ var links = {
             "https://archiveos.org/rivendell/",
             "https://www.supergamer.x10host.com/", //EOL - Latest release from 2016
             "http://www.zenwalk.org/", //EOL - Latest release from 2023
+            "http://topologi-linux.sourceforge.net/", //EOL - Latest release from 2009
             "https://www.freenix.net/" //EOL - No working link or repo (Slackware with non-free packages)
         ], // eol slack links
         8: [

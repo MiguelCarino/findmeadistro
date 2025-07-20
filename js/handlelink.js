@@ -199,8 +199,7 @@ var links = {
             "https://kisslinux.org/", //Will become EOL in December, 2025 if there is not new release
             "https://easyos.org/", //Experimental Linux distribution made by Puppy Linux's maintainer
             "https://www.redox-os.org/", //Rust-based independent OS
-            "https://4mlinux.com/", //Lighweight 32-bit Desktop edition and 64-bit Server edition
-            "https://clearlinux.org/",
+            "https://4mlinux.com/", //Lighweight 32-bit Desktop edition and 64-bit Server edition            
             "https://github.com/microsoft/azurelinux",
             "https://omnios.org/",
             "https://asterinas.github.io/", //Rust based, framekernel and Linux ABI compatible
@@ -333,6 +332,7 @@ var links = {
             "https://nakst.gitlab.io/essence", //EOL - Last release from 2023
             "https://www.dragora.org/", //EOL - Latest release from 2023
             "http://www.mklinux.org/", // EOL - Latest release from 2009
+            "https://clearlinux.org/", //Discontinued by Intel in July 2025
             "https://www.foresightlinux.org/" //EOL - Last release from 2013
         ] // eol other links
     }

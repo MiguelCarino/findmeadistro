@@ -103,20 +103,37 @@ body.theme-suse-light {
   --credits: #ffffff
 }
 
-body.theme-slackware-dark {
+body.theme-gentoo-dark {
   --bg: #1b1b3a;
   --text: #e0e0ff;
   --accent: #6c63ff;
   --hover: #5047e0;
   --credits: #ffffff
 }
-body.theme-slackware-light {
+body.theme-gentoo-light {
   --bg: #f5f5ff;
   --text: #2b2b4c;
   --accent: #6c63ff;
   --hover: #cbc8ff;
   --credits: #ffffff
 }
+
+body.theme-slackware-dark {
+  --bg: #1c1c1c;
+  --text: #f8f8f2;
+  --accent: #007c92;
+  --hover: #0095a8;
+  --credits: #ffffff;
+}
+
+body.theme-slackware-light {
+  --bg: #f9f9f9;
+  --text: #2e2e2e;
+  --accent: #ffcc00;
+  --hover: #ffe600;
+  --credits: #000000;
+}
+
 
 body.theme-bsd-dark {
   --bg: #2b0f14;

@@ -1,374 +1,357 @@
-html {
-    width: 100vw
-}
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=IBM+Plex+Sans&family=Inter&family=JetBrains+Mono&family=Noto+Sans&family=Recursive&family=Red+Hat+Display&family=LXGW+WenKai&display=swap');
 
 :root {
-    --main-color: #1C1C1C;
-    --main-text-color: lightgrey;
-    --main-background: #2D2D2D;
-    --main-bigtitle: white;
+  --bg: #0a0a13;
+  --text: #f0f0f0;
+  --accent: #ff67d1;
+  --hover: #1a1c2c;
+  --font-pixel: 'Varela Round', cursive;
+}
+
+/* THEME CLASSES WITH FONTS */
+body.theme-debian-dark, body.theme-debian-light {
+  --font-main: 'Fira Sans'; /* Modern, stable, designed by Mozilla */
+}
+
+body.theme-arch-dark, body.theme-arch-light {
+  --font-main: 'JetBrains Mono'; /* Clean, technical, hacker vibe */
+}
+
+body.theme-fedora-dark, body.theme-fedora-light {
+  --font-main: 'Red Hat Display'; /* Official Fedora/Red Hat branding */
+}
+
+body.theme-suse-dark, body.theme-suse-light {
+  --font-main: 'LXGW WenKai'; /* OpenSUSE has strong Asian adoption; elegant and legible */
+}
+
+body.theme-slackware-dark, body.theme-slackware-light {
+  --font-main: 'IBM Plex Sans'; /* Retro-modern for the oldest distro */
+}
+
+body.theme-bsd-dark, body.theme-bsd-light {
+  --font-main: 'Noto Sans'; /* Highly legible, broad Unicode coverage */
+}
+
+body.theme-other-dark, body.theme-other-light {
+  --font-main: 'Recursive'; /* Quirky, flexible, good for alt distros */
+}
+
+body.theme-all-dark, body.theme-all-light {
+  --font-main: 'Inter'; /* Neutral, highly readable */
+}
+
+/* THEME MAP — apply body.theme-{name}-{light|dark} */
+body.theme-debian-dark {
+  --bg: #410110;
+  --text: #ffffff;
+  --accent: #c8102e;
+  --hover: #7a0e2b;
+  --credits: #ffffff
+}
+body.theme-debian-light {
+  --bg: #fcfcfc;
+  --text: #3a0c17;
+  --accent: #000000;
+  --hover: #7a0e2b;
+  --credits: #ffffff
+}
+
+body.theme-arch-dark {
+  --bg: #0e1a20;
+  --text: #e0f7ff;
+  --accent: #08c;
+  --hover: #08c;
+  --credits: #ffffff
+}
+body.theme-arch-light {
+  --bg: #eaf7fc;
+  --text: #0f1f27;
+  --accent: #08c;
+  --hover: #08c;
+  --credits: #ffffff
+}
+
+body.theme-fedora-dark {
+  --bg: #00254d;
+  --text: #d0e6ff;
+  --accent: #3c6eb4;
+  --hover: #rgb(81 162 218);
+  --credits: #ffffff
+}
+body.theme-fedora-light {
+  --bg: #e7f0fa;
+  --text: #0c1e3a;
+  --accent: #3c6eb4;
+  --hover: #a3c0e5;
+  --credits: #ffffff
+}
+
+body.theme-suse-dark {
+  --bg: #102c10;
+  --text: #dbffe3;
+  --accent: #69b40f;
+  --hover: #4a8b0a;
+  --credits: #ffffff
+}
+body.theme-suse-light {
+  --bg: #effae1;
+  --text: #1a321b;
+  --accent: #69b40f;
+  --hover: #a8d56a;
+  --credits: #ffffff
+}
+
+body.theme-slackware-dark {
+  --bg: #1b1b3a;
+  --text: #e0e0ff;
+  --accent: #6c63ff;
+  --hover: #5047e0;
+  --credits: #ffffff
+}
+body.theme-slackware-light {
+  --bg: #f5f5ff;
+  --text: #2b2b4c;
+  --accent: #6c63ff;
+  --hover: #cbc8ff;
+  --credits: #ffffff
+}
+
+body.theme-bsd-dark {
+  --bg: #2b0f14;
+  --text: #ffeeee;
+  --accent: #ff3b30;
+  --hover: #e32d25;
+  --credits: #ffffff
+}
+body.theme-bsd-light {
+  --bg: #fff5f5;
+  --text: #4c0a0a;
+  --accent: #ff3b30;
+  --hover: #ffb0aa;
+  --credits: #ffffff
+}
+
+body.theme-other-dark {
+  --bg: #1c1c1c;
+  --text: #eeeeee;
+  --accent: #ffaa00;
+  --hover: #cc8800;
+  --credits: #ffffff
+}
+body.theme-other-light {
+  --bg: #fef9ec;
+  --text: #332b00;
+  --accent: #ffaa00;
+  --hover: #ffe0a3;
+  --credits: #ffffff
+}
+
+body.theme-all-dark {
+  --bg: #0a0a13;
+  --text: #f0f0f0;
+  --accent: #ffffff;
+  --hover: #4fb722;
+  --credits: #ffffff
+}
+body.theme-all-light {
+  --bg: #f8f0fa;
+  --text: #3f2c3d;
+  --accent: #000000;
+  --hover: #69b40f;
+  --credits: #ffffff
+}
+
+/* Universal styles using CSS variables */
+* {
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--main-color);
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
-
-@font-face {
-    font-family: "Varela Round";
-    src: url("../font/Varela_Round/VarelaRound-Regular.ttf");
+header {
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  position: relative;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url("../font/Roboto/Roboto-Thin.ttf");
+header h1 {
+  font-family: var(--font-pixel);
+  font-size: 4.5rem;
+  color: var(--accent);
+  /*text-shadow: 0 0 6px var(--accent);*/
 }
 
-/* useless for now
-@media screen and (min-width: 1600px){
-    @viewport{
-    }
-}
-*/
-
-#random-button {
-    font-family: 'Varela Round';
-    font-size: 25px;
-    text-align: center;
-    width: 400px;
-    height: 80px;
-    border-radius: 10px;
-    border: 2px solid white;
-    outline: none;
-    margin-bottom: 250px;
-    transition: transform .2s;
-    cursor: pointer;
-}
-
-
-#random-button:hover {
-    transform: scale(1.02);
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 0%;
-}
-
-.BigTitle {
-    font-family: 'Varela Round';
-    font-size: 90px;
-    text-align: center;
-    color: white;
-    margin-bottom: 5px;
-}
-
-.smallerTitle {
-    font-family: 'Varela Round';
-    font-style: italic;
-    color: grey;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 80px;
-    position: relative;
-}
-
-footer {
-    position: static;
-    bottom: 0;
-    clear: both;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    justify-content: center;
-}
-
-.suggestions {
-    font-family: 'Anonymous Pro', monospace;
-    outline: none;
-    background: none;
-    border: none;
-    color: var(--main-text-color);
-    font-size: 15px;
-    cursor: pointer;
-    cursor: pointer;
-    position: relative;
-    right: -50px;
-    bottom: 15px;
-}
-
-.GH {
-    cursor: pointer;
-    position: relative;
-    left: -100px;
-    bottom: -20px;
-    border: none;
-    outline: none;
-    background-color: none;
-    background: none;
-    filter: brightness(150%);
-    transition: filter .1s;
-}
-
-.GH:hover {
-    filter: brightness(200%);
-}
-
-.creditsanddate {
-    font-family: 'Roboto';
-    color: var(--main-text-color);
-    font-size: 15px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    bottom: 0;
-}
-
-/*buttons*/
-@media only screen and (max-width: 768px) {
-    .FMALDportal {
-        scale: 70%;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .FMALDportal {
-        scale: 50%;
-        left: -120px;
-    }
-}
-
-.FMALDportal {
-    position: relative;
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    bottom: 150px;
-    background: var(--main-background);
-    height: 50px;
-    width: 540px;
-    border-radius: 5px;
-}
-
-.FMALDportal .tip {
-    font-family: "Varela Round";
-    font-size: 12px;
-    visibility: hidden;
-    width: 120px;
-    background-color: RGBA(50, 50, 50, 0.9);
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    border: 5px RGBA(50, 50, 50, 0.9);
-
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.FMALDportal .tip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.FMALDportal:hover .tip {
-    visibility: visible;
-    opacity: 1;
-}
-
-.FMALDportal button {
-    font-family: "Anonymous Pro", monospace;
-    color: white;
-    text-align: center;
-    position: absolute;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    height: 35px;
-    width: 50px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-
-.FMALDALL {
-    left: 5px;
-}
-
-.FMALDDEBIAN {
-    left: 65px;
-}
-
-.FMALDARCH {
-    left: 125px;
-}
-
-.FMALDGENTOO {
-    left: 185px;
-}
-
-.FMALDFEDORA {
-    left: 245px;
-}
-
-.FMALDSUSE {
-    left: 305px;
-}
-
-.FMALDSLACK {
-    left: 365px;
-}
-
-.FMALDBSD {
-    left: 425px;
-}
-
-.FMALDOTHER {
-    left: 485px;
-}
-
-.FMALDEOL {
-    left: 545px;
-}
-
-hr {
-    position: absolute;
-    left: 480px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: none;
-}
-
-.EOLsettings button {
-    font-family: "Anonymous Pro", monospace;
-    color: white;
-    text-align: center;
-    position: absolute;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    height: 35px;
-    width: 50px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.EOLon {
-    left: 5px;
-}
-
-.EOLoff {
-    left: 65px;
-}
-
-.EOLonly {
-    left: 125px;
-}
-
-.EOLsettings {
-    position: relative;
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    bottom: 130px;
-    background: var(--main-background);
-    height: 50px;
-    width: 180px;
-    border-radius: 5px;
-}
-
-.EOLsettings .tip {
-    font-family: "Varela Round";
-    font-size: 12px;
-    visibility: hidden;
-    width: 200px;
-    background-color: RGBA(50, 50, 50, 0.9);
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 6px;
-    border: 5px RGBA(50, 50, 50, 0.9);
-    position: absolute;
-    z-index: 1;
-    bottom: -120%;
-    left: 30%;
-    margin-left: -60px;
-
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.EOLsettings .tip ::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.EOLsettings:hover .tip {
-    visibility: visible;
-    opacity: 1;
+header p {
+  font-size: 2rem;
+  color: var(--text);
+  margin-top: 0.5rem;
 }
 
 #dmbutton {
-    background-color: none;
-    background: none;
-    outline: none;
-    border: none;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 2%;
-    display: grid;
-    justify-content: center;
-    filter: brightness(100%);
-    transition: filter .1s;
-    cursor: pointer;
-}
-
-#dmbutton:hover {
-    filter: brightness(150%);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 #dmimg {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.action {
+  text-align: center;
+}
+
+#random-button {
+  font-family: var(--font-pixel);
+  font-size: 1.5em;
+  padding: 1rem 2rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  /*box-shadow: 0 0 10px var(--accent);*/
+  transition: transform 0.2s;
+}
+
+#random-button:hover {
+  transform: scale(1.05);
+}
+
+.families, .eol {
+  text-align: center;
+}
+
+.family-buttons, .eol-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.family-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--hover);
+  border: 1px solid var(--accent);
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 80px;
+  transition: background 0.2s, transform 0.2s;
+  color: var(--text);
+}
+
+.family-button img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.25rem;
+}
+
+.family-button span {
+  font-size: 0.95rem;
+  font-family: var(--font-pixel);
+  text-align: center;
+}
+
+.family-button:hover {
+  background: var(--accent);
+  transform: scale(1.05);
+  color: white;
+}
+
+.family-button.active-family,
+button.active-eol {
+  background-color: var(--accent);
+  color: white !important;
+  /*box-shadow: 0 0 8px var(--accent);*/
+  transform: scale(1.05);
+}
+
+.eol-buttons button {
+  font-family: var(--font-pixel);
+  padding: 0.75rem 1rem;
+  border: none;
+  background: var(--hover);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.eol-buttons button:hover {
+  background: var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--hover);
+  margin-top: auto;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-icons img {
+  width: 32px;
+  height: 32px;
+  /*filter: drop-shadow(0 0 5px var(--accent));*/
+}
+
+.credits {
+  font-size: 0.8rem;
+  font-family: var(--font-pixel);
+  color: var(--credits);
+}
+
+.credits a{
+  color: var(--credits )
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .family-button {
+    width: 70px;
+  }
+  #random-button {
+    width: 90%;
+  }
 }

@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Me a Distro</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" type="image/png" href="img/randomdistrofavicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Me a Distro</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/MiguelCarino/AssetsAndData/refs/heads/main/NonFree/ICO/distromoe-inverted.png" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+<body>
+  <header>
+    <h1 id="BigTitle">Find Me a Distro</h1>
+    <p>Discover a new distribution with a single click</p>
+    <button id="dmbutton" onclick="dmchange()" title="Toggle Theme">
+      <img src="img/thememode.png" id="dmimg" alt="Toggle Theme">
+    </button>
+  </header>
 
-<body onload="changeButtonColor()">
-    <h1 class="BigTitle" id="BigTitle">Find me a Distro</h1>
-    <h3 class="smallerTitle">Discover a new distribution with a single click</h3>
-    <div class="darkmode">
-        <button id="dmbutton" onclick="dmchange()">
-            <img src="img/thememode.png" id="dmimg">
-        </button>
-    </div>
-    <div class="content">
-        <button id="random-button" onclick="clicked()">Find Me a Distro</button>
-    </div>
-    <div class="FMALDportal">
-        <span class="tip">You can choose specific variant of distributions you want to see using this option</span>
-        <button class="FMALDALL" id="FMALDALL" onclick="toggleDistro(1)">All</button>
-        <button class="FMALDDEBIAN" id="FMALDDEBIAN" onclick="toggleDistro(2)">DEBIAN</button>
-        <button class="FMALDARCH" id="FMALDARCH" onclick="toggleDistro(3)">ARCH</button>
-        <button class="FMALDGENTOO" id="FMALDGENTOO" onclick="toggleDistro(4)">GENTOO</button>
-        <button class="FMALDFEDORA" id="FMALDFEDORA" onclick="toggleDistro(5)">FEDORA</button>
-        <button class="FMALDSUSE" id="FMALDSUSE" onclick="toggleDistro(6)">SUSE</button>
-        <button class="FMALDSLACK" id="FMALDSLACK" onclick="toggleDistro(7)">SLACK</button>
-        <button class="FMALDBSD" id="FMALDBSD" onclick="toggleDistro(8)">BSD</button>
-        <button class="FMALDOTHER" id="FMALDOTHER" onclick="toggleDistro(9)">OTHER</button>
-    </div>
-    <div class="EOLsettings">
-        <span class="tip">Option for EOL (End Of Life) Distributions</span>
-        <button class="EOLoff" id="EOLoff" onclick="toggleEOL(2)">EOL Off</button>
-        <button class="EOLon" id="EOLon" onclick="toggleEOL(1)">EOL On</button>
-        <button class="EOLonly" id="EOLonly" onclick="toggleEOL(3)">EOL Only</button>
-    </div>
-    <footer>
-        <button class="GH" onclick="relocateGithubHome()">
-            <img src="img/GitHub_logo.png" width="50px" height="50px">
-        </button>
-        <button class="suggestions" onclick="relocateGithub()">Suggestions?</button>
-        <h2 class="creditsanddate">© 
-            <script>
-                document.write(new Date().getFullYear());
-            </script>, This is a Fork of <a href="https://github.com/KripC2160/findmealinuxdistro">Find Me A Linux Distro Project by KripC</a>
-        </h2>
-    </footer>
+  <main>
+    <section class="action">
+      <button id="random-button" onclick="clicked()">Find Me a Distro</button>
+    </section>
 
-    <!-- Load scripts in correct order -->
-    <script src="js/handlelink.js"></script>
-    <script src="js/script.js"></script>
+    <section class="families">
+      <h2>Distro Families</h2>
+      <div class="family-buttons">
+        <button class="family-button" id="FMALDALL" onclick="toggleDistro(1)"><img src="https://raw.githubusercontent.com/MiguelCarino/AssetsAndData/refs/heads/main/NonFree/ICO/distromoe-inverted.png"><span>All</span></button>
+        <button class="family-button" id="FMALDDEBIAN" onclick="toggleDistro(2)"><img src="https://github.com/MiguelCarino/AssetsAndData/blob/main/NonFree/ICO/debian.ico?raw=true"><span>Debian</span></button>
+        <button class="family-button" id="FMALDARCH" onclick="toggleDistro(3)"><img src="https://github.com/MiguelCarino/AssetsAndData/blob/main/NonFree/ICO/arch.png?raw=true"><span>Arch</span></button>
+        <button class="family-button" id="FMALDFEDORA" onclick="toggleDistro(5)"><img src="https://github.com/MiguelCarino/AssetsAndData/blob/main/NonFree/ICO/fedora.ico?raw=true"><span>Fedora</span></button>
+        <button class="family-button" id="FMALDSUSE" onclick="toggleDistro(6)"><img src="https://github.com/MiguelCarino/AssetsAndData/blob/main/NonFree/ICO/opensuse.png?raw=true"><span>SUSE</span></button>
+        <button class="family-button" id="FMALDSLACK" onclick="toggleDistro(7)"><img src="https://github.com/MiguelCarino/AssetsAndData/blob/main/NonFree/ICO/slackware.png?raw=true"><span>Slack</span></button>
+        <button class="family-button" id="FMALDBSD" onclick="toggleDistro(8)"><img src="https://github.com/MiguelCarino/AssetsAndData/blob/main/NonFree/ICO/freebsd.ico?raw=true"><span>BSD</span></button>
+        <button class="family-button" id="FMALDOTHER" onclick="toggleDistro(9)"><img src="https://github.com/MiguelCarino/AssetsAndData/blob/main/NonFree/ICO/void.png?raw=true"><span>Other</span></button>
+      </div>
+    </section>
+
+    <section class="eol">
+      <h2>EOL Options</h2>
+      <div class="eol-buttons">
+        <button id="EOLoff" onclick="toggleEOL(2)">EOL Off</button>
+        <button id="EOLon" onclick="toggleEOL(1)">EOL On</button>
+        <button id="EOLonly" onclick="toggleEOL(3)">EOL Only</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-icons">
+      <button onclick="relocateGithubHome()"><img src="img/GitHub_logo.png" alt="GitHub" /></button>
+      <button onclick="relocateGithub()">Suggestions?</button>
+    </div>
+    <p class="credits">© <script>document.write(new Date().getFullYear());</script> — Fork of <a href="https://github.com/KripC2160/findmealinuxdistro" target="_blank">Find Me A Linux Distro Project by KripC</a></p>
+  </footer>
+  <script src="js/handlelink.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>

@@ -1,11 +1,10 @@
-// Initialize local storage with default values if not set
+
 function initializeLocalStorage() {
     const defaults = {
         EOLToggle: 2,
         dmToggle: 'light',
         distroToggle: 1,
     };
-
     for (const [key, value] of Object.entries(defaults)) {
         if (localStorage.getItem(key) === null) {
             localStorage.setItem(key, value);
@@ -13,45 +12,56 @@ function initializeLocalStorage() {
     }
 }
 
-// Call initialization
 initializeLocalStorage();
+let r = document.querySelector(":root");
+let EOLToggle = parseInt(localStorage.getItem("EOLToggle"), 10);
 
-// Get local storage variables
-var r = document.querySelector(":root");
-var EOLToggle = parseInt(localStorage.getItem("EOLToggle"), 10);
-
-// Color palette and distro list
-var curr_color, prev_color;
-var color_list = [
-    "#ED5565", "#48CFAD", "#FC6E51", // red, turquoise, orange
-    "#4FC1E9", "#AC92EC", "#5D9CFF", // aqua, purple, blue
-    "#A0D468", "#EC87C0", "#FFCE54", // green, pink, mustard
-    "#CFA400" // yellow
+const color_list = [
+    "#ED5565", "#4fb722", "#FC6E51", "#4FC1E9", "#AC92EC", "#5D9CFF",
+    "#69b40f", "#AC92EC", "#de3939ff", "#c39a31ff"
 ];
 
-var distro_list = [
+let curr_color, prev_color;
+
+const distro_list = [
     "TEST", "FMALDALL", "FMALDDEBIAN", "FMALDARCH", "FMALDGENTOO",
     "FMALDFEDORA", "FMALDSUSE", "FMALDSLACK", "FMALDBSD", "FMALDOTHER"
 ];
 
-// Function to open a random link based on toggle settings
+document.addEventListener("DOMContentLoaded", () => {
+    const distroToggle = parseInt(localStorage.getItem("distroToggle"), 10);
+    const baseTheme = {
+        1: 'theme-all',
+        2: 'theme-debian',
+        3: 'theme-arch',
+        4: 'theme-gentoo',
+        5: 'theme-fedora',
+        6: 'theme-suse',
+        7: 'theme-slackware',
+        8: 'theme-bsd',
+        9: 'theme-other'
+    }[distroToggle] || 'theme-all';
+
+    const dmMode = localStorage.getItem("dmToggle") || 'dark';
+    document.body.className = `${baseTheme}-${dmMode}`;
+
+    highlightActiveButtons();
+    changeButtonColor();
+});
+
+
 function clicked() {
     const distroToggle = parseInt(localStorage.getItem("distroToggle"), 10);
     let chosenList;
-    
-    // Determine which list to use based on EOLToggle
-    if (EOLToggle === 1) { // EOL On: randomly select from regular and EOL
-        chosenList = Math.random() < 0.5 ? links.regular : links.eol;
-    } else if (EOLToggle === 2) { // EOL Off: use regular links
-        chosenList = links.regular;
-    } else if (EOLToggle === 3) { // EOL Only: use EOL links
-        chosenList = links.eol;
-    }
+
+    if (EOLToggle === 1) chosenList = Math.random() < 0.5 ? links.regular : links.eol;
+    else if (EOLToggle === 2) chosenList = links.regular;
+    else if (EOLToggle === 3) chosenList = links.eol;
 
     let allLinks = [];
-    if (distroToggle === 1) { // "ALL" option selected
+    if (distroToggle === 1) {
         for (let key in chosenList) {
-            if (chosenList.hasOwnProperty(key) && Array.isArray(chosenList[key])) {
+            if (Array.isArray(chosenList[key])) {
                 allLinks = allLinks.concat(chosenList[key]);
             }
         }
@@ -61,109 +71,157 @@ function clicked() {
 
     if (allLinks.length > 0) {
         const randomLink = allLinks[Math.floor(Math.random() * allLinks.length)];
-        window.open(randomLink);
+        window.open(randomLink, '_blank');
     }
 }
 
-// Function to change button colors
 function changeButtonColor() {
-    const color = Math.floor(Math.random() * color_list.length);
+    const colorIndex = Math.floor(Math.random() * color_list.length);
     const distroToggle = parseInt(localStorage.getItem("distroToggle"), 10);
-    
-    if (color_list[color] === curr_color || color_list[color] === prev_color) {
+
+    if (color_list[colorIndex] === curr_color || color_list[colorIndex] === prev_color) {
         changeButtonColor();
         return;
     }
 
-    // Set button color for all buttons
-    document.querySelectorAll('.FMALDALL, .FMALDDEBIAN, .FMALDARCH, .FMALDGENTOO, .FMALDFEDORA, .FMALDSUSE, .FMALDSLACK, .FMALDBSD, .FMALDOTHER').forEach(button => {
-        button.style.backgroundColor = "#3D3D3D";
+    document.querySelectorAll('.family-button').forEach(button => {
+        button.style.backgroundColor = "#151525";
         button.style.color = "white";
     });
 
-    // Update color based on the selected button
-    const selectedColor = color_list[distroToggle] || color_list[color];
-    document.getElementById("BigTitle").style.color = selectedColor;
-    document.getElementById(distro_list[distroToggle]).style.backgroundColor = selectedColor;
+    const selectedColor = color_list[distroToggle] || color_list[colorIndex];
+    const selectedId = distro_list[distroToggle];
+    const selectedButton = document.getElementById(selectedId);
+    if (selectedButton) {
+        selectedButton.style.backgroundColor = selectedColor;
+    }
+
+    const bigTitle = document.getElementById("BigTitle");
+    if (bigTitle) bigTitle.style.color = selectedColor;
 
     ['EOLon', 'EOLoff', 'EOLonly', 'random-button'].forEach(id => {
-        document.getElementById(id).style.backgroundColor = selectedColor;
+        const elem = document.getElementById(id);
+        if (elem) elem.style.backgroundColor = selectedColor;
     });
 
-    // Update active EOL button
     updateEOLButtonStyles();
 
     prev_color = curr_color;
-    curr_color = color_list[color];
+    curr_color = selectedColor;
 
-    // Apply theme based on dmToggle
     applyTheme();
 }
 
-// Update EOL button styles based on the selected EOLToggle
 function updateEOLButtonStyles() {
-    document.getElementById('EOLon').style.backgroundColor = EOLToggle === 1 ? curr_color : '#3D3D3D';
-    document.getElementById('EOLoff').style.backgroundColor = EOLToggle === 2 ? curr_color : '#3D3D3D';
-    document.getElementById('EOLonly').style.backgroundColor = EOLToggle === 3 ? curr_color : '#3D3D3D';
-}
-
-// Apply special styles for distroToggle 9
-function applySpecialStyles() {
-    document.querySelectorAll('#EOLon, #EOLoff, #EOLonly, #random-button').forEach(elem => {
-        elem.style.backgroundColor = "white";
+    const styles = {
+        on: EOLToggle === 1 ? curr_color : '#1a1c2c',
+        off: EOLToggle === 2 ? curr_color : '#1a1c2c',
+        only: EOLToggle === 3 ? curr_color : '#1a1c2c'
+    };
+    ['EOLon', 'EOLoff', 'EOLonly'].forEach(id => {
+        const btn = document.getElementById(id);
+        if (btn) btn.style.backgroundColor = styles[id.replace('EOL', '').toLowerCase()];
     });
-    const color = localStorage.dmToggle == 'light' ? "white" : "#3D3D3D";
-    document.getElementById("BigTitle").style.color = color;
-    document.getElementById("FMALDOTHER").style.backgroundColor = "#F5F7FA";
-    document.getElementById("FMALDOTHER").style.color = "#3D3D3D";
 }
 
-// Apply theme based on localStorage dmToggle
-function applyTheme() {
-    if (localStorage.dmToggle == 'dark') {
-        document.getElementById('random-button').style.borderColor = "#4C4C4C";
-        r.style.setProperty('--main-color', 'F0F0F0');
-        r.style.setProperty('--main-text-color', '#1C1C1C');
-        r.style.setProperty('--main-background', "#D4D4D4");
-        r.style.setProperty('--main-bigtitle', 'white');
-    } else {
-        document.getElementById('random-button').style.borderColor = "white";
-        r.style.setProperty('--main-color', '#1C1C1C');
-        r.style.setProperty('--main-text-color', 'lightgrey');
-        r.style.setProperty('--main-background', "#2D2D2D");
-        r.style.setProperty('--main-bigtitle', '#1C1C1C');
+function highlightActiveButtons() {
+    const distroToggle = parseInt(localStorage.getItem("distroToggle"), 10);
+    const eolToggle = parseInt(localStorage.getItem("EOLToggle"), 10);
+
+    document.querySelectorAll('.family-button').forEach(btn => {
+        btn.classList.remove('active-family');
+        btn.style.backgroundColor = "#151525";
+        btn.style.color = "white";
+    });
+
+    const activeFamilyId = distro_list[distroToggle];
+    const activeFamilyBtn = document.getElementById(activeFamilyId);
+    if (activeFamilyBtn) {
+        activeFamilyBtn.classList.add('active-family');
+        activeFamilyBtn.style.backgroundColor = curr_color || "#4FC1E9";
+    }
+
+    ['EOLon', 'EOLoff', 'EOLonly'].forEach(id => {
+        const btn = document.getElementById(id);
+        if (btn) {
+            btn.classList.remove('active-eol');
+            btn.style.backgroundColor = "#1a1c2c";
+        }
+    });
+
+    const activeEOLId = eolToggle === 1 ? 'EOLon' : (eolToggle === 2 ? 'EOLoff' : 'EOLonly');
+    const activeEOLBtn = document.getElementById(activeEOLId);
+    if (activeEOLBtn) {
+        activeEOLBtn.classList.add('active-eol');
+        activeEOLBtn.style.backgroundColor = curr_color || "#4FC1E9";
     }
 }
 
-// Toggle functions for EOL settings
 function toggleEOL(value) {
     if (EOLToggle !== value) {
         EOLToggle = value;
         localStorage.setItem("EOLToggle", value);
-        updateEOLButtonStyles();
+        highlightActiveButtons();
         changeButtonColor();
     }
 }
 
-// Distro toggle functions
 function toggleDistro(distro) {
     localStorage.setItem("distroToggle", distro);
+
+    const baseTheme = {
+        1: 'theme-all',
+        2: 'theme-debian',
+        3: 'theme-arch',
+        4: 'theme-gentoo',
+        5: 'theme-fedora',
+        6: 'theme-suse',
+        7: 'theme-slackware',
+        8: 'theme-bsd',
+        9: 'theme-other'
+    }[distro] || 'theme-all';
+
+    const dmMode = localStorage.getItem("dmToggle") || 'dark';
+    document.body.className = `${baseTheme}-${dmMode}`;
+
+    highlightActiveButtons();
     changeButtonColor();
 }
 
-// Toggle dark mode
 function dmchange() {
-    const currentMode = localStorage.getItem("dmToggle");
-    const newMode = currentMode === 'dark' ? 'light' : 'dark';
-    localStorage.setItem("dmToggle", newMode);
+    const current = localStorage.getItem("dmToggle");
+    const next = current === 'dark' ? 'light' : 'dark';
+    localStorage.setItem("dmToggle", next);
+
+    const distroToggle = parseInt(localStorage.getItem("distroToggle"), 10);
+    const baseTheme = {
+        1: 'theme-all',
+        2: 'theme-debian',
+        3: 'theme-arch',
+        4: 'theme-gentoo',
+        5: 'theme-fedora',
+        6: 'theme-suse',
+        7: 'theme-slackware',
+        8: 'theme-bsd',
+        9: 'theme-other'
+    }[distroToggle] || 'theme-all';
+
+    document.body.className = `${baseTheme}-${next}`;
     changeButtonColor();
 }
 
-// Relocate functions for GitHub links
+
+function applyTheme() {
+    const isDark = localStorage.dmToggle === 'dark';
+    r.style.setProperty('--bg', isDark ? '#ffffff' : '#0a0a13');
+    r.style.setProperty('--text', isDark ? '#000000' : '#f0f0f0');
+    r.style.setProperty('--hover', isDark ? '#e0e0e0' : '#1a1c2c');
+}
+
 function relocateGithubHome() {
-    window.open("https://github.com/MiguelCarino/findmeadistro");
+    window.open("https://github.com/MiguelCarino/findmeadistro", "_blank");
 }
 
 function relocateGithub() {
-    window.open("https://github.com/MiguelCarino/findmeadistro/issues");
+    window.open("https://github.com/MiguelCarino/findmeadistro/issues", "_blank");
 }

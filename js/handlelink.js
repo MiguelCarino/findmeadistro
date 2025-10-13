@@ -109,7 +109,8 @@ var links = {
             "https://exodia-os.github.io/", //Will become EOL in December, 2025 if there is not new release (Arch based distro for cibersecurity)
             "https://arkanelinux.org/", //Arch based immutable distro with default GNOME
             "https://nyarchlinux.moe/",
-            "https://kde.org/linux/" //Official KDE supported distro based on Arch
+            "https://kde.org/linux/", //Official KDE supported distro based on Arch
+            "https://omarchy.org/" //Based on Arch with Hyprland ootb
         ], // arch links
         4: [
             "https://www.gentoo.org/",

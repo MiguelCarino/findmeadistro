@@ -192,7 +192,6 @@ var links = {
             "https://kaosx.us/",
             "https://thinstation.github.io/thinstation/",
             "https://asahilinux.org/",
-            "https://cb-linux.github.io/breath/",
             "https://ponyos.org/",
             "http://collapseos.org/",
             "https://archhurd.org/", //Arch based on GNUHurd
@@ -335,6 +334,7 @@ var links = {
             "https://www.dragora.org/", //EOL - Latest release from 2023
             "http://www.mklinux.org/", // EOL - Latest release from 2009
             "https://clearlinux.org/", //Discontinued by Intel in July 2025
+            "https://cb-linux.github.io/breath/", //EOL
             "https://www.foresightlinux.org/" //EOL - Last release from 2013
         ] // eol other links
     }

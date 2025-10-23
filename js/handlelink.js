@@ -117,7 +117,6 @@ var links = {
             "https://chromeenterprise.google/os/chromeosflex/",
             "https://www.calculate-linux.org/",
             "https://www.chromium.org/chromium-os",
-            "https://pentoo.ch/", //Will become EOL in December, 2025 if there is not new release
             "https://www.system-rescue.org/Download/",
             "https://www.mocaccino.org",
             "https://redcorelinux.org/", //Hardened Gentoo based on its testing branch
@@ -274,6 +273,7 @@ var links = {
             "https://archiveos.org/bintoo/",
             "https://archiveos.org/phaeronix/",
             "https://archiveos.org/bitdefender/",
+            "https://pentoo.ch/", //EOL - Last release from 2020
             "https://liguros.gitlab.io/" //EOL - Last release from 2020
         ], // eol gentoo links
         5: [

@@ -185,7 +185,7 @@ var links = {
             "http://www.tinycorelinux.net/",
             "https://slitaz.org/en/",
             "https://puppylinux.com/",
-            "https://openwrt.org/",
+            //"https://openwrt.org/", //Removed due to it being not a distro
             "https://nixos.org/",
             "https://crux.nu/",
             "https://www.alpinelinux.org/",

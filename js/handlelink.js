@@ -23,9 +23,9 @@ var links = {
             "https://www.edubuntu.org/",
             "https://www.backbox.org/",
             "https://zorinos.com/",
-            "https://galliumos.org/",
             "https://elementary.io/",
             "https://ubuntuunity.org/",
+            "https://ubuntucinnamon.org/",
             "https://neon.kde.org/",
             "https://www.linuxliteos.com/",
             "http://www.linuxmce.org/",
@@ -248,6 +248,7 @@ var links = {
             "https://solydxk.com/", //EOL - Latest release from 2023
             "https://www.endlessos.org/os", //EOL - Latest release from 2022
             "https://astralinux.ru/en/software-services/os/", //EOL - Latest version is from 2023
+            "https://galliumos.org/", //EOL - Last release from 2019
             "https://cutefish-ubuntu.github.io/" //Still based on 22.04, no recent releases
         ], // eol debian links
         3: [

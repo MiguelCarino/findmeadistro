@@ -194,7 +194,6 @@ var links = {
             "https://asahilinux.org/",
             "https://ponyos.org/",
             "http://collapseos.org/",
-            "https://archhurd.org/", //Arch based on GNUHurd
             "https://venomlinux.org/",
             "https://kisslinux.org/", //Will become EOL in December, 2025 if there is not new release
             "https://easyos.org/", //Experimental Linux distribution made by Puppy Linux's maintainer
@@ -261,6 +260,7 @@ var links = {
             "http://justbrowsinglinux.com/", //Cool but last release was in 2014
             "https://www.frugalware.org/", //EOL - Last version from 2016
             "https://arcolinux.com/", //Project has been ended by author
+            "https://archhurd.org/", //EOL - Arch based on GNUHurd. Last version from 2018.
             "https://arcolinuxb.com/" //Project has been ended by author
         ], // eol arch links
         4: [

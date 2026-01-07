@@ -144,7 +144,8 @@ var links = {
             "https://getaurora.dev/", //Ublue (Fedora atomica) based
             "https://projectbluefin.io/", //Ublue (Fedora atomica) based
             "https://bazzite.gg/", //Ublue (Fedora atomica) based
-            "https://oreonproject.org/" //RHEL based with added tweaks
+            "https://oreonproject.org/", //RHEL based with added tweaks
+            "https://github.com/vojtapolasek/vojtux" //Fedora with tweaks aimed for aimed at visually impaired users. Purpose of the distro is to contribute such tweaks to Fedora itself.
         ], // fedora links
         6: [
             "https://www.suse.com/",
@@ -159,7 +160,7 @@ var links = {
             "https://nimblex.net/",
             "https://salixos.org/",
             "http://www.porteus.org/",
-            "https://www.dnalinux.com/", //Container, not distro
+            //"https://www.dnalinux.com/", //Container, not distro
             "https://www.plamolinux.org/"
         ], // slack links
         8: [

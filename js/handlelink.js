@@ -39,7 +39,7 @@ var links = {
             "https://mxlinux.org/",
             "https://www.bandshed.net/avlinux/", //Based on MX Linux, oriented for music production
             "https://bosslinux.in/",
-            "https://www.primeos.in/download/",
+            "https://www.primebook.in/primeos",
             "http://www.knopper.net/knoppix/index-en.html",
             "https://www.devuan.org/",
             "https://www.deepin.org/en/",
@@ -51,7 +51,7 @@ var links = {
             "https://ferenos.weebly.com/",
             "https://www.elivecd.org/",
             "https://q4os.org/index.html",
-            "https://voyagerlive.org/", //who ever made this website really needs improve their image quality and stretch resolution :/ 
+            "https://voyagerlive.org/", //Ubuntu and Debian images, can't really call it a distro, website is terrible
             "https://www.bunsenlabs.org/", //Might become EOL due to not updated release
             "https://sourceforge.net/projects/rebeccablackos/", //First wayland testing distro, project updated but no recent ISOs
             "https://regolith-linux.org/",
@@ -101,7 +101,7 @@ var links = {
             "https://garudalinux.org/",
             //"https://tos.odex.be/", //Not there anymore
             "https://rebornos.org/",
-            "https://getcryst.al/site", //Arch distro with GNOME and Amethyst AUR helper
+            //"https://getcryst.al/site", //EOL, website down and outdated - Arch distro with GNOME and Amethyst AUR helper
             "https://pearos.xyz/", //macos like Arch
             "https://blendos.co/", //Arch based distro that has some sort of distrobox integration
             "https://cachyos.org/",
@@ -120,7 +120,7 @@ var links = {
             "https://www.system-rescue.org/Download/",
             "https://www.mocaccino.org",
             "https://redcorelinux.org/", //Hardened Gentoo based on its testing branch
-            "https://fydeos.xio/" //De-googled Chromium
+            "https://fydeos.io/" //De-googled Chromium
         ], // gentoo links
         5: [
             "https://getfedora.org/",

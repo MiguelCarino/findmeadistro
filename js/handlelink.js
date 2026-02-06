@@ -6,7 +6,7 @@ var links = {
         ], // Placeholder for "ALL"
         2: [
             "https://www.debian.org/",
-            "https://pop.system76.com/", //Based on Ubuntu 22.04 LTS, still no Ubuntu 24.04 LTS release
+            "https://pop.system76.com/", //Based on Ubuntu 24.04 LTS, features COSMIC desktop
             "https://www.kali.org/",
             "https://tails.boum.org/",
             "https://www.debian.org/",
@@ -14,7 +14,6 @@ var links = {
             "https://xubuntu.org/",
             "https://kubuntu.org/",
             "https://www.raspberrypi.org/software/",
-            "https://www.pureos.net/",
             "https://www.parrotsec.org/",
             "https://lubuntu.me/",
             "https://ubuntubudgie.org/",
@@ -30,12 +29,11 @@ var links = {
             "https://www.linuxliteos.com/",
             "http://www.linuxmce.org/",
             "https://www.bodhilinux.com/",
-            "https://www.blue-systems.com/products/software/netrunner/",
+            "https://www.netrunner.com/", // Will become EOL if no Debian 13 version is released in December 2026
             "https://www.gooroom.kr/",
             "https://trisquel.info/",
             "https://peppermintos.com/",
-            "https://www.slax.org/",
-            "https://antixlinux.com/", //Will become EOL in July, 2026 if there is not new release
+            "https://www.slax.org/", //Running on Slackware or Debian 12, will reach EOL in 2026 if no Debian Trixie version is released
             "https://mxlinux.org/",
             "https://www.bandshed.net/avlinux/", //Based on MX Linux, oriented for music production
             "https://bosslinux.in/",
@@ -44,7 +42,6 @@ var links = {
             "https://www.devuan.org/",
             "https://www.deepin.org/en/",
             "https://www.crunchbangplusplus.org/",
-            "http://www.damnsmalllinux.org/", //Will become EOL in December, if there is no new release
             "https://getsol.us/",
             "https://armbian.com",
             "https://qntm.org/suicide", //It's a concept, pretty much you can install it as a package or a container
@@ -52,13 +49,8 @@ var links = {
             "https://www.elivecd.org/",
             "https://q4os.org/index.html",
             "https://voyagerlive.org/", //Ubuntu and Debian images, can't really call it a distro, website is terrible
-            "https://www.bunsenlabs.org/", //Might become EOL due to not updated release
             "https://sourceforge.net/projects/rebeccablackos/", //First wayland testing distro, project updated but no recent ISOs
-            "https://regolith-linux.org/",
-            "https://ibuntuos.com",
             "https://nxos.org/", //non Systemd Debian based
-            "http://ubuntuce.com/",
-            "https://spirallinux.github.io/", //Will become EOL in December, 2025 if there is not new release.
             "https://uwuntuos.site/",
             "https://pika-os.com/", //Gaming Ubuntu based distro with Nobara Tweaks
             "https://escuelaslinux.sourceforge.io/english/index.html", //Based on Bodhi, designed for preschool
@@ -69,6 +61,7 @@ var links = {
             "https://www.caine-live.net/", //Computer forensics distro based on Ubuntu
             "https://br-os.com/",
             "https://amaroklinux.org/",
+            "https://besgnulinux.blogspot.com", //Debian based for low memory and processing computer to save old computers
             "https://www.linuxfx.org/", //Have an independent fork https://windowsfx.org/"
             //"https://www.linspirelinux.com/", //Became paywalled, discarded
             "https://kaisenlinux.org/", //Debian-based rolling release distro for IT diagnostics
@@ -84,6 +77,7 @@ var links = {
             "https://winuxos.com/", //It was called Wubuntu
             //"https://goldendoglinux.org/", //Debian based with gld alias for apt, Microsoft repo installed, and Plasma
             "https://www.anduinos.com/", //Debian based with Ubuntu package approach
+            "https://cuerdos.github.io", //Debian based Spanish distro, not really a unique feature
             "https://dyne.org/dynebolic/" //Devuan based
         ], // debian links
         3: [
@@ -92,7 +86,6 @@ var links = {
             "https://archbang.org/",
             "https://artixlinux.org/",
             //"https://archlabslinux.com/", //Not there anymore
-            //"https://www.blackarch.org/", //404 - Will be removed next time
             "https://endeavouros.com/",
             "https://www.hyperbola.info/",
             "https://www.parabola.nu/",
@@ -105,11 +98,12 @@ var links = {
             "https://pearos.xyz/", //macos like Arch
             "https://blendos.co/", //Arch based distro that has some sort of distrobox integration
             "https://cachyos.org/",
-            //"https://xerolinux.xyz/",
-            "https://exodia-os.github.io/", //Will become EOL in December, 2025 if there is not new release (Arch based distro for cibersecurity)
+            "https://xerolinux.xyz/",
             "https://arkanelinux.org/", //Arch based immutable distro with default GNOME
             "https://nyarchlinux.moe/",
             "https://kde.org/linux/", //Official KDE supported distro based on Arch
+            "https://kazeta.org/", //Gaming only distro focused on DRM-free games
+            "https://lainos.dev/", //Arch based with Hyprland meant to give Lain aesthetics
             "https://omarchy.org/" //Based on Arch with Hyprland ootb
         ], // arch links
         4: [
@@ -150,10 +144,9 @@ var links = {
         6: [
             "https://www.suse.com/",
             "https://www.opensuse.org/",
-            "https://geckolinux.github.io/", //Will become EOL in December, 2025 if there is not new release
             "https://easynas.org/",
-            "https://linuxkamarada.com/", //Current version is 15.3, while openSuse Leap is 15.4, if it gets behind another version it will be considered EOL
-            "https://get.regataos.com.br/" //Based on OpenSuse Leap
+            "https://linuxkamarada.com/", //Brazilian distro based on open SUSE Leap, working on version 15.6
+            "https://get.regataos.com.br/" //Gaming focused distro based on OpenSuse Leap
         ], // suse links
         7: [
             "http://www.slackware.com/",
@@ -196,7 +189,6 @@ var links = {
             "https://ponyos.org/",
             "http://collapseos.org/",
             "https://venomlinux.org/",
-            "https://kisslinux.org/", //Will become EOL in December, 2025 if there is not new release
             "https://easyos.org/", //Experimental Linux distribution made by Puppy Linux's maintainer
             "https://www.redox-os.org/", //Rust-based independent OS
             "https://4mlinux.com/", //Lighweight 32-bit Desktop edition and 64-bit Server edition            
@@ -250,6 +242,13 @@ var links = {
             "https://www.endlessos.org/os", //EOL - Latest release from 2022
             "https://astralinux.ru/en/software-services/os/", //EOL - Latest version is from 2023
             "https://galliumos.org/", //EOL - Last release from 2019
+            "http://www.damnsmalllinux.org/", //EOL - Last release from 2024
+            "https://antixlinux.com/", //EOL - Last release from 2024
+            "https://spirallinux.github.io/", //EOL - No new releases since 2023
+            "https://www.bunsenlabs.org/", //EOL - No release since 2024
+            "https://regolith-linux.org/", // EOL - Last version from 2021
+            "https://www.pureos.net/", //EOL - Last release from 2023
+            "http://ubuntuce.com/", // EOL - Last release from 2022
             "https://cutefish-ubuntu.github.io/" //Still based on 22.04, no recent releases
         ], // eol debian links
         3: [
@@ -263,6 +262,8 @@ var links = {
             "https://www.frugalware.org/", //EOL - Last version from 2016
             "https://arcolinux.com/", //Project has been ended by author
             "https://archhurd.org/", //EOL - Arch based on GNUHurd. Last version from 2018.
+            "https://exodia-os.github.io/", //EOL - No new release since 2024 (Arch based distro for cibersecurity)
+            "https://www.blackarch.org/", //EOL - Outdated ISO from 2023, unacceptable on Arch
             "https://arcolinuxb.com/" //Project has been ended by author
         ], // eol arch links
         4: [
@@ -297,6 +298,7 @@ var links = {
             "http://urix.us/",
             "https://archiveos.org/kde-four-live/",
             "https://www.stresslinux.org/sl/",
+            "https://geckolinux.github.io/", //EOL - Last release from 2022
             "https://archiveos.org/astaro/"
         ], // eol suse links
         7: [
@@ -337,6 +339,7 @@ var links = {
             "http://www.mklinux.org/", // EOL - Latest release from 2009
             "https://clearlinux.org/", //Discontinued by Intel in July 2025
             "https://cb-linux.github.io/breath/", //EOL
+            "https://k1ss.org/install", //EOL - No updates since 2020
             "https://www.foresightlinux.org/" //EOL - Last release from 2013
         ] // eol other links
     }

@@ -64,14 +64,14 @@ var links = {
             "https://escuelaslinux.sourceforge.io/english/index.html", //Based on Bodhi, designed for preschool
             "https://www.digi77.com/linux-kodachi/", //anti-forensic and anonymous distro based on Debian
             "https://blends.debian.org/edu/",
-            "http://www.omoikane.co.jp/", //Debian-based Japanese distro meant for business support through licensing
+            "https://www.omoikane.co.jp/product/", //Debian-based Japanese distro meant for business support through licensing
             "https://vanillaos.org/",
             "https://www.caine-live.net/", //Computer forensics distro based on Ubuntu
             "https://br-os.com/",
             "https://amaroklinux.org/",
             "https://www.linuxfx.org/", //Have an independent fork https://windowsfx.org/"
-            "https://www.linspirelinux.com/",
-            "https://kaisenlinux.org/", //Debian-based distro for IT diagnostics
+            //"https://www.linspirelinux.com/", //Became paywalled, discarded
+            "https://kaisenlinux.org/", //Debian-based rolling release distro for IT diagnostics
             "https://rhinolinux.org/", //ubuntu-based rolling release distro
             //"https://teejeetech.com/tag/zinc/", //ubuntu lts based distro with xfce as default, it has been renamed or removed
             "https://draugeros.org/", //Ubuntu based gaming distro
@@ -114,13 +114,13 @@ var links = {
         ], // arch links
         4: [
             "https://www.gentoo.org/",
-            "https://chromeenterprise.google/os/chromeosflex/",
+            //"https://chromeenterprise.google/os/chromeosflex/", //Requires contacto to get offers from Google, discarded
             "https://www.calculate-linux.org/",
             "https://www.chromium.org/chromium-os",
             "https://www.system-rescue.org/Download/",
             "https://www.mocaccino.org",
             "https://redcorelinux.org/", //Hardened Gentoo based on its testing branch
-            "https://fydeos.io/" //De-googled Chromium
+            "https://fydeos.xio/" //De-googled Chromium
         ], // gentoo links
         5: [
             "https://getfedora.org/",

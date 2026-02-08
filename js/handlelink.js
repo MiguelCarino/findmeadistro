@@ -139,6 +139,7 @@ var links = {
             "https://projectbluefin.io/", //Ublue (Fedora atomica) based
             "https://bazzite.gg/", //Ublue (Fedora atomica) based
             "https://oreonproject.org/", //RHEL based with added tweaks
+            "https://origami.wf/", //Fedora Atomic based, features COSMIC
             "https://github.com/vojtapolasek/vojtux" //Fedora with tweaks aimed for aimed at visually impaired users. Purpose of the distro is to contribute such tweaks to Fedora itself.
         ], // fedora links
         6: [

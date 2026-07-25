@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=IBM+Plex+Sans&family=Inter&family=JetBrains+Mono&family=Noto+Sans&family=Recursive&family=Red+Hat+Display&family=LXGW+WenKai&display=swap');
+@import url('../font/google/theme-fonts.css');
+
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../font/Varela_Round/VarelaRound-Regular.ttf') format('truetype');
+}
 
 :root {
   --bg: #0a0a13;

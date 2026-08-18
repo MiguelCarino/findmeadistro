@@ -50,7 +50,9 @@ var links = {
             "https://voyagerlive.org/", //Ubuntu and Debian images, can't really call it a distro, website is terrible
             "https://sourceforge.net/projects/rebeccablackos/", //First wayland testing distro, project updated but no recent ISOs
             "https://nxos.org/", //non Systemd Debian based
-            "https://uwuntuos.site/",
+            // UwUntu OS removed 2026-08-18: the domain lapsed and now redirects through
+            // guidedsurgerysolutions.com to gambling spam with injected third-party scripts.
+            // Do not restore the link; if the project reappears it will be on a new domain.
             "https://pika-os.com/", //Gaming Ubuntu based distro with Nobara Tweaks
             "https://escuelaslinux.sourceforge.io/english/index.html", //Based on Bodhi, designed for preschool
             "https://www.digi77.com/linux-kodachi/", //anti-forensic and anonymous distro based on Debian

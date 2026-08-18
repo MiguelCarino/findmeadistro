@@ -50,9 +50,9 @@ var links = {
             "https://voyagerlive.org/", //Ubuntu and Debian images, can't really call it a distro, website is terrible
             "https://sourceforge.net/projects/rebeccablackos/", //First wayland testing distro, project updated but no recent ISOs
             "https://nxos.org/", //non Systemd Debian based
-            // UwUntu OS removed 2026-08-18: the domain lapsed and now redirects through
-            // guidedsurgerysolutions.com to gambling spam with injected third-party scripts.
-            // Do not restore the link; if the project reappears it will be on a new domain.
+            // Never link uwuntuos.site: that domain lapsed, and the project itself warns it
+            // now serves malware. This is the official one.
+            "https://uwuntuos.com/", //UwUntu, Ubuntu based weeb distro
             "https://pika-os.com/", //Gaming Ubuntu based distro with Nobara Tweaks
             "https://escuelaslinux.sourceforge.io/english/index.html", //Based on Bodhi, designed for preschool
             "https://www.digi77.com/linux-kodachi/", //anti-forensic and anonymous distro based on Debian
@@ -76,7 +76,7 @@ var links = {
             "https://ubuntukylin.com/", //Ubuntu based Kylin
             "https://loc-os.com/", //Debian 11 based distro meant for old harwdware
             //"https://goldendoglinux.org/", //Debian based with gld alias for apt, Microsoft repo installed, and Plasma
-            "https://www.anduinos.com/", //Debian based with Ubuntu package approach
+            //"https://www.anduinos.com/", //Debian based with Ubuntu package approach - website answering 502 since 2026-08-18
             "https://cuerdos.github.io", //Debian based Spanish distro, not really a unique feature
             "https://dyne.org/dynebolic/", //Devuan based
             "https://ubuntu.com/", //The base a good third of this list is built on, listed for its own sake

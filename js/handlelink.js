@@ -9,7 +9,6 @@ var links = {
             "https://pop.system76.com/", //Based on Ubuntu 24.04 LTS, features COSMIC desktop
             "https://www.kali.org/",
             "https://tails.boum.org/",
-            "https://www.debian.org/",
             "https://linuxmint.com/",
             "https://xubuntu.org/",
             "https://kubuntu.org/",
@@ -38,7 +37,7 @@ var links = {
             "https://www.bandshed.net/avlinux/", //Based on MX Linux, oriented for music production
             "https://bosslinux.in/",
             "https://www.primebook.in/primeos",
-            "http://www.knopper.net/knoppix/index-en.html",
+            "https://www.knopper.net/knoppix/index-en.html",
             "https://www.devuan.org/",
             "https://www.deepin.org/en/",
             "https://www.crunchbangplusplus.org/",
@@ -74,11 +73,25 @@ var links = {
             "https://www.openkylin.top/downloads/", //Open Kylin, the whole Kylin family is a mess
             "https://ubuntukylin.com/", //Ubuntu based Kylin
             "https://loc-os.com/", //Debian 11 based distro meant for old harwdware
-            "https://winuxos.com/", //It was called Wubuntu
             //"https://goldendoglinux.org/", //Debian based with gld alias for apt, Microsoft repo installed, and Plasma
             "https://www.anduinos.com/", //Debian based with Ubuntu package approach
             "https://cuerdos.github.io", //Debian based Spanish distro, not really a unique feature
-            "https://dyne.org/dynebolic/" //Devuan based
+            "https://dyne.org/dynebolic/", //Devuan based
+            "https://ubuntu.com/", //The base a good third of this list is built on, listed for its own sake
+            "https://sparkylinux.org/", //Debian based, testing and stable branches, still releasing
+            "https://antixlinux.com/", //Debian based, no systemd, runs on machines nothing else will
+            "https://www.pureos.net/", //Purism's FSF-endorsed Debian derivative, desktop and phone
+            "https://minios.dev/", //Debian based live system with persistence, 32 and 64 bit
+            "https://www.exton.se/", //Prolific Swedish maker of Ubuntu and Debian respins
+            "https://gnoppix.org/", //Debian based, ships local AI tooling
+            "https://www.makululinux.com/", //Debian based with its own desktops, Shift and Max
+            "https://emmabuntus.org/", //Debian based, built to refurbish old machines for charities
+            "https://lilidog.org/", //Debian testing with Openbox, systemd optional
+            "https://www.kicksecure.com/", //Hardened Debian, the base Whonix is built on
+            "https://www.whonix.org/", //Anonymity by a gateway and workstation pair, everything over Tor
+            "https://www.proxmox.com/", //Debian based hypervisor, VE and Backup Server
+            "https://www.truenas.com/", //NAS appliance, the current SCALE line is Debian based
+            "https://dietpi.com/" //Minimal Debian for SBCs and low power servers
         ], // debian links
         3: [
             "https://archlinux.org/",
@@ -103,8 +116,14 @@ var links = {
             "https://nyarchlinux.moe/",
             "https://kde.org/linux/", //Official KDE supported distro based on Arch
             "https://kazeta.org/", //Gaming only distro focused on DRM-free games
-            "https://lainos.dev/", //Arch based with Hyprland meant to give Lain aesthetics
-            "https://omarchy.org/" //Based on Arch with Hyprland ootb
+            "https://omarchy.org/", //Based on Arch with Hyprland ootb
+            "https://www.biglinux.com.br/", //Brazilian, Manjaro based with a heavily reworked KDE
+            "https://bluestarlinux.sourceforge.io/", //Arch based, ships a full software set out of the box
+            "https://archcraft.io/", //Minimal Arch with preconfigured window managers
+            "https://athenaos.org/", //Arch based for penetration testing
+            "https://chimeraos.org/", //Arch based console style gaming OS, boots into Steam
+            "https://store.steampowered.com/steamos", //Valve's Arch based OS for the Steam Deck
+            "https://www.tromjaro.com/" //Manjaro based, trade-free software only
         ], // arch links
         4: [
             "https://www.gentoo.org/",
@@ -121,7 +140,6 @@ var links = {
             "https://developers.redhat.com/products/rhel/download",
             "https://www.centos.org/",
             "https://www.openmandriva.org/",
-            "https://www.clearos.com/",
             "https://www.oracle.com/linux/",
             "https://www.mageia.org/en/",
             "https://rosa.ru/rosa-fresh-12/", //Now called Rosa Fresh
@@ -130,7 +148,6 @@ var links = {
             "https://almalinux.org",
             "https://rockylinux.org/",
             "https://berry-lab.net/",
-            "https://img.cs.montana.edu/linux/montanalinux/", //Montana Linux
             "https://www.miraclelinux.com/", //Japanese RHEL compatible system
             //"https://euro-linux.com/en/software/eurolinux/", //404 - Polish RHEL compatible system, not developing the distro anymore
             "https://nobaraproject.org/",
@@ -140,14 +157,19 @@ var links = {
             "https://bazzite.gg/", //Ublue (Fedora atomica) based
             "https://oreonproject.org/", //RHEL based with added tweaks
             "https://origami.wf/", //Fedora Atomic based, features COSMIC
-            "https://github.com/vojtapolasek/vojtux" //Fedora with tweaks aimed for aimed at visually impaired users. Purpose of the distro is to contribute such tweaks to Fedora itself.
+            "https://github.com/vojtapolasek/vojtux", //Fedora with tweaks aimed for aimed at visually impaired users. Purpose of the distro is to contribute such tweaks to Fedora itself.
+            "https://ultramarine-linux.org/", //Fedora based with codecs and Flathub set up, actively released
+            "https://www.qubes-os.org/", //Security by isolation, Xen with Fedora and Debian templates
+            "https://secureblue.dev/", //Hardened Fedora Atomic images
+            "https://universal-blue.org/" //The image factory behind Bazzite, Bluefin and Aurora
         ], // fedora links
         6: [
             "https://www.suse.com/",
             "https://www.opensuse.org/",
             "https://easynas.org/",
             "https://linuxkamarada.com/", //Brazilian distro based on open SUSE Leap, working on version 15.6
-            "https://get.regataos.com.br/" //Gaming focused distro based on OpenSuse Leap
+            "https://get.regataos.com.br/", //Gaming focused distro based on OpenSuse Leap
+            "https://aeondesktop.github.io/" //openSUSE Aeon, immutable GNOME on MicroOS
         ], // suse links
         7: [
             "http://www.slackware.com/",
@@ -155,7 +177,9 @@ var links = {
             "https://salixos.org/",
             "http://www.porteus.org/",
             //"https://www.dnalinux.com/", //Container, not distro
-            "https://www.plamolinux.org/"
+            "https://www.plamolinux.org/",
+            "https://github.com/porteux/porteux", //Slackware based portable system, released on GitHub
+            "https://www.wifislax.com/" //Slackware based, wireless auditing
         ], // slack links
         8: [
             "https://www.ghostbsd.org/",
@@ -169,7 +193,10 @@ var links = {
             "https://ravynos.com/",
             "https://chimera-linux.org/",
             "https://fuguita.org/",
-            "https://opnsense.org/" //firewall distro based on hardenedBSD, which is freebsd-based
+            "https://opnsense.org/", //firewall distro based on hardenedBSD, which is freebsd-based
+            "https://hardenedbsd.org/", //FreeBSD fork with exploit mitigations, the base OPNsense came from
+            "https://www.pfsense.org/", //FreeBSD based firewall, the other half of the OPNsense story
+            "https://www.xigmanas.com/" //FreeBSD based NAS, the continuation of NAS4Free
         ], // bsd links
         9: [
             "https://guix.gnu.org/",
@@ -196,7 +223,16 @@ var links = {
             "https://github.com/microsoft/azurelinux",
             "https://omnios.org/",
             "https://asterinas.github.io/", //Rust based, framekernel and Linux ABI compatible
-            "https://t2sde.org/" //T2 SDE (System Development Environment), build system for Linux distributions
+            "https://t2sde.org/", //T2 SDE (System Development Environment), build system for Linux distributions
+            "https://aerynos.com/", //Formerly Serpent OS, independent with the moss package manager
+            "https://os.gnome.org/", //GNOME's own image based reference OS
+            "https://postmarketos.org/", //Alpine based, ten years of updates for old phones
+            "https://batocera.org/", //Retro gaming, boots straight into EmulationStation
+            "https://rocknix.org/", //Handheld gaming firmware, successor to JELOS
+            "https://www.zimaspace.com/", //ZimaOS, home server appliance OS
+            "https://www.openeuler.org/en/", //Chinese enterprise distro maintained by the openEuler community
+            "https://openindiana.org/", //illumos, the community continuation of OpenSolaris
+            "https://www.commodoreos.net/" //Commodore OS Vision, Linux dressed as a C64
         ] // other links
     },
     eol: {
@@ -215,7 +251,6 @@ var links = {
             "https://archiveos.org/max/",
             "https://sites.google.com/site/poseidonlinux/Home",
             "https://archiveos.org/nepalinux/",
-            "https://sparkylinux.org/",
             "https://peachosi.com/", 
             "https://archiveos.org/advanced/",
             "https://archiveos.org/mydebian/",
@@ -236,7 +271,6 @@ var links = {
             "https://www.jolicloud.com/jolios/",
             "https://www.backslashlinux.com/",
             "https://lxle.net/",
-            "https://amaroklinux.org/",
             "https://amog-os.github.io/", //ඞ sus
             "https://github.com/theVakhovskeIsTaken/holoiso",//Latest release in 2024
             "https://solydxk.com/", //EOL - Latest release from 2023
@@ -244,13 +278,12 @@ var links = {
             "https://astralinux.ru/en/software-services/os/", //EOL - Latest version is from 2023
             "https://galliumos.org/", //EOL - Last release from 2019
             "http://www.damnsmalllinux.org/", //EOL - Last release from 2024
-            "https://antixlinux.com/", //EOL - Last release from 2024
             "https://spirallinux.github.io/", //EOL - No new releases since 2023
             "https://www.bunsenlabs.org/", //EOL - No release since 2024
             "https://regolith-linux.org/", // EOL - Last version from 2021
-            "https://www.pureos.net/", //EOL - Last release from 2023
             "http://ubuntuce.com/", // EOL - Last release from 2022
-            "https://cutefish-ubuntu.github.io/" //Still based on 22.04, no recent releases
+            "https://cutefish-ubuntu.github.io/", //Still based on 22.04, no recent releases
+            "https://winuxos.com/" //Wubuntu, Windows lookalike based on Ubuntu, website gone
         ], // eol debian links
         3: [
             "https://archbox-linux.github.io/",
@@ -265,7 +298,8 @@ var links = {
             "https://archhurd.org/", //EOL - Arch based on GNUHurd. Last version from 2018.
             "https://exodia-os.github.io/", //EOL - No new release since 2024 (Arch based distro for cibersecurity)
             "https://www.blackarch.org/", //EOL - Outdated ISO from 2023, unacceptable on Arch
-            "https://arcolinuxb.com/" //Project has been ended by author
+            "https://arcolinuxb.com/", //Project has been ended by author
+            "https://lainos.dev/" //Arch with Hyprland and Lain aesthetics, website down
         ], // eol arch links
         4: [
             "https://archiveos.org/vlos/",
@@ -289,9 +323,10 @@ var links = {
             "https://archiveos.org/tao/",
             "https://archiveos.org/startcom/",
             "https://scientificlinux.org/", //Reached EOL on June 30, 2024
-            "https://ultramarine-linux.org", //EOL - Latest release based on Fedora 41
             "https://sourceforge.net/projects/xange/", //EOL - Latest release from 2023
-            "https://risi.io/" //Dead website
+            "https://risi.io/", //Dead website
+            "https://www.clearos.com/", //Small business server distro, discontinued and website gone
+            "https://img.cs.montana.edu/linux/montanalinux/" //Montana Linux, university respin, host no longer answers
         ], // eol fedora links
         6: [
             "https://archiveos.org/united/",
@@ -312,13 +347,9 @@ var links = {
             "https://www.freenix.net/" //EOL - No working link or repo (Slackware with non-free packages)
         ], // eol slack links
         8: [
-            "https://www.ghostbsd.org/",
-            "https://www.freebsd.org/",
-            "https://www.openbsd.org/",
-            "https://www.netbsd.org/",
-            "https://www.dragonflybsd.org/",
-            "https://www.midnightbsd.org/",
-            "https://nomadbsd.org/"
+            "https://www.trueos.org/", //Was PC-BSD, discontinued in 2020, the notice explains why
+            "https://nextbsd.org/", //FreeBSD fork with Mach and launchd, abandoned
+            "https://sourceforge.net/projects/desktopbsd/" //DesktopBSD, FreeBSD for the desktop, long dead
         ], // eol bsd links
         9: [
             "https://archiveos.org/kateos/",

@@ -1,5 +1,8 @@
 # **Find Me A Distro**
-[Find Me A Distro]("https://distro.moe"), or **FMAD** for short, is a website that finds random Unix/GNU+linux distributions. This is a fork from Find Me A Linux Distro ("https://github.com/KripC2160/findmealinuxdistro") by KripC2160 ("https://github.com/KripC2160/").
+
+**[Find yours →](https://distro.carino.systems/)** — runs in your browser.
+
+[Find Me A Distro](https://distro.moe), or **FMAD** for short, is a website that finds random Unix/GNU+linux distributions. This is a fork from [Find Me a Linux Distro](https://github.com/KripC2160/findmealinuxdistro) by [KripC2160](https://github.com/KripC2160/).
 
 ![randomdistrofaviconbig](https://raw.githubusercontent.com/MiguelCarino/Depot/refs/heads/main/NonFree/ICO/distromoe.png)
 

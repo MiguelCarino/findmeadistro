@@ -2,7 +2,7 @@
 
 **[Find yours →](https://distro.carino.systems/)** — runs in your browser.
 
-[Find Me A Distro](https://distro.moe), or **FMAD** for short, is a website that finds random Unix/GNU+linux distributions. This is a fork from [Find Me a Linux Distro](https://github.com/KripC2160/findmealinuxdistro) by [KripC2160](https://github.com/KripC2160/).
+[Find Me A Distro](https://distro.moe), or **FMAD** for short, is a website that picks a random Unix/GNU+Linux distribution from the family you choose and shows it on the page, with a link to its site. It is a random pick, not a recommendation; your choices are kept in the link so a result can be shared. This is a fork from [Find Me a Linux Distro](https://github.com/KripC2160/findmealinuxdistro) by [KripC2160](https://github.com/KripC2160/).
 
 ![randomdistrofaviconbig](https://raw.githubusercontent.com/MiguelCarino/Depot/refs/heads/main/NonFree/ICO/distromoe.png)
 
@@ -28,6 +28,4 @@ licences, which the GPL above does not displace.
 
 | Path | What it is | Licence | Notice |
 | --- | --- | --- | --- |
-| [`font/google/`](font/google/) | Fira Sans, IBM Plex Sans, Inter, JetBrains Mono, Noto Sans, Recursive, Red Hat Display | SIL OFL 1.1 | [`font/google/OFL.txt`](font/google/OFL.txt) |
-| [`font/Roboto/`](font/Roboto/) | Roboto | Apache-2.0 (the version bundled here; Roboto 3.x onward is OFL 1.1) | [`font/Roboto/LICENSE.txt`](font/Roboto/LICENSE.txt) |
-| [`font/Varela_Round/`](font/Varela_Round/) | Varela Round | SIL OFL 1.1 | [`font/Varela_Round/OFL.txt`](font/Varela_Round/OFL.txt) |
+| [`fonts/`](fonts/) | IBM Plex Sans, IBM Plex Mono, Red Hat Display (the shared Carino fonts) | SIL OFL 1.1 | [`fonts/OFL.txt`](fonts/OFL.txt) |

@@ -5,7 +5,8 @@
 // Everything lives in the URL hash (#family=debian&eol=off&pick=linuxmint.com),
 // so a result can be shared, reloaded and redone. Nothing is stored or sent.
 // The link lists are in js/handlelink.js (`links.regular` / `links.eol`,
-// keyed 1-9 by family).
+// keyed 1-9 by family, each entry { url, name }). The pick in the hash is
+// the host/path slug, not the name, so older shared links still resolve.
 
 (function () {
     'use strict';
@@ -52,8 +53,11 @@
         const lists = state.eol === 'off' ? ['regular'] : state.eol === 'only' ? ['eol'] : ['regular', 'eol'];
         const out = [];
         lists.forEach((list) => keys.forEach((k) => {
-            (links[list][FAMILIES[k].n] || []).forEach((url) => {
-                out.push({ url: url, id: slug(url), family: k, eol: list === 'eol' });
+            (links[list][FAMILIES[k].n] || []).forEach((entry) => {
+                // A bare URL string still works; it shows its host as the name.
+                const url = typeof entry === 'string' ? entry : entry.url;
+                const id = slug(url);
+                out.push({ url: url, id: id, name: entry.name || id, family: k, eol: list === 'eol' });
             });
         }));
         return out;
@@ -109,12 +113,15 @@
         chip(fill(tr('{family} family'), { family: famName }));
         if (hit.eol) chip(tr('Discontinued'));
 
-        $('rcName').textContent = hit.id;
+        $('rcName').textContent = hit.name;
+        $('rcHost').textContent = hit.id;
+        $('rcHost').href = hit.url;
         // Say plainly that this is a random pick, from which pool.
         let why = state.family === 'all'
             ? tr('A random pick from all families — pick again for another.')
             : fill(tr('A random pick from the {family} family — pick again for another.'), { family: famName });
-        if (hit.eol) why += ' ' + tr('This project is discontinued, so its site may be an archive.');
+        // No space after a full-width stop (ja).
+        if (hit.eol) why += (/[。！？]$/.test(why) ? '' : ' ') + tr('This project is discontinued, so its site may be an archive.');
         $('rcWhy').textContent = why;
         $('rcLink').href = hit.url;
         box.hidden = false;

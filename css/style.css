@@ -25,6 +25,8 @@
 .result-card:hover { transform: none; }
 .rc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .rc-name { margin: 0; font-family: var(--display); font-weight: 900; font-size: var(--fs-h1); line-height: 1.15; overflow-wrap: anywhere; }
+.rc-host { align-self: flex-start; margin-top: -4px; font-family: var(--mono); font-size: var(--fs-sec); color: var(--text-sec); overflow-wrap: anywhere; }
+.rc-host:hover { color: var(--accent); }
 .rc-why { margin: 0; color: var(--text-sec); font-size: var(--fs-sec); line-height: 1.55; }
 .rc-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
 

@@ -7,6 +7,8 @@
 
 const I18N = {
     es: {
+        // Page title (browser tab)
+        'Find Me a Distro — A Random Linux or BSD Distro to Try': 'Find Me a Distro — Una distro Linux o BSD al azar para probar',
         'Late shift.': 'Turno nocturno.',
         'Good morning.': 'Buenos días.',
         'Good afternoon.': 'Buenas tardes.',
@@ -53,6 +55,7 @@ const I18N = {
         'part of carino.systems': 'parte de carino.systems',
     },
     'pt-BR': {
+        'Find Me a Distro — A Random Linux or BSD Distro to Try': 'Find Me a Distro — Uma distro Linux ou BSD aleatória para experimentar',
         'Late shift.': 'Turno da madrugada.',
         'Good morning.': 'Bom dia.',
         'Good afternoon.': 'Boa tarde.',
@@ -94,6 +97,7 @@ const I18N = {
         'part of carino.systems': 'parte do carino.systems',
     },
     ja: {
+        'Find Me a Distro — A Random Linux or BSD Distro to Try': 'Find Me a Distro — 試すLinux・BSDディストロをランダムに1つ',
         'Late shift.': '夜勤ですね。',
         'Good morning.': 'おはようございます。',
         'Good afternoon.': 'こんにちは。',
@@ -135,6 +139,7 @@ const I18N = {
         'part of carino.systems': 'carino.systems の一部',
     },
     ru: {
+        'Find Me a Distro — A Random Linux or BSD Distro to Try': 'Find Me a Distro — случайный дистрибутив Linux или BSD, чтобы попробовать',
         'Late shift.': 'Ночная смена.',
         'Good morning.': 'Доброе утро.',
         'Good afternoon.': 'Добрый день.',
@@ -195,8 +200,12 @@ function applyStaticI18n() {
     });
 }
 
+// The tab title, keyed by its English text the same way.
+let titleKey = '';
 function applyI18n() {
     document.documentElement.lang = currentFleetLang();
+    if (!titleKey) titleKey = document.title.trim();
+    document.title = t(titleKey);
     applyStaticI18n();
 }
 

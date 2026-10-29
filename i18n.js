@@ -47,12 +47,9 @@ const I18N = {
         'Pick again': 'Elegir otra',
         'Your answers stay in this link and this browser. Nothing is sent anywhere.': 'Tus respuestas se quedan en este enlace y en este navegador. No se envía nada a ningún sitio.',
         // Footer
-        'Source': 'Código fuente',
         'Suggest a distro': 'Sugerir una distro',
         'Upstream project': 'Proyecto original',
-        'Legal & privacy': 'Aviso legal y privacidad',
         'Fork of Find Me A Linux Distro by KripC': 'Fork de Find Me A Linux Distro de KripC',
-        'part of carino.systems': 'parte de carino.systems',
     },
     'pt-BR': {
         'Find Me a Distro — A Random Linux or BSD Distro to Try': 'Find Me a Distro — Uma distro Linux ou BSD aleatória para experimentar',
@@ -89,12 +86,9 @@ const I18N = {
         'Visit its site': 'Abrir o site',
         'Pick again': 'Sortear outra',
         'Your answers stay in this link and this browser. Nothing is sent anywhere.': 'Suas respostas ficam neste link e neste navegador. Nada é enviado para lugar nenhum.',
-        'Source': 'Código-fonte',
         'Suggest a distro': 'Sugerir uma distro',
         'Upstream project': 'Projeto original',
-        'Legal & privacy': 'Aviso legal e privacidade',
         'Fork of Find Me A Linux Distro by KripC': 'Fork do Find Me A Linux Distro de KripC',
-        'part of carino.systems': 'parte do carino.systems',
     },
     ja: {
         'Find Me a Distro — A Random Linux or BSD Distro to Try': 'Find Me a Distro — 試すLinux・BSDディストロをランダムに1つ',
@@ -131,12 +125,9 @@ const I18N = {
         'Visit its site': 'サイトを開く',
         'Pick again': 'もう一度選ぶ',
         'Your answers stay in this link and this browser. Nothing is sent anywhere.': '回答はこのリンクとこのブラウザの中だけにあります。どこにも送信されません。',
-        'Source': 'ソース',
         'Suggest a distro': 'ディストロを提案',
         'Upstream project': '元のプロジェクト',
-        'Legal & privacy': '法的情報とプライバシー',
         'Fork of Find Me A Linux Distro by KripC': 'KripC による Find Me A Linux Distro のフォーク',
-        'part of carino.systems': 'carino.systems の一部',
     },
     ru: {
         'Find Me a Distro — A Random Linux or BSD Distro to Try': 'Find Me a Distro — случайный дистрибутив Linux или BSD, чтобы попробовать',
@@ -173,12 +164,9 @@ const I18N = {
         'Visit its site': 'Открыть сайт',
         'Pick again': 'Выбрать снова',
         'Your answers stay in this link and this browser. Nothing is sent anywhere.': 'Ваши ответы остаются в этой ссылке и в этом браузере. Ничего никуда не отправляется.',
-        'Source': 'Исходный код',
         'Suggest a distro': 'Предложить дистрибутив',
         'Upstream project': 'Исходный проект',
-        'Legal & privacy': 'Правовая информация и конфиденциальность',
         'Fork of Find Me A Linux Distro by KripC': 'Форк Find Me A Linux Distro от KripC',
-        'part of carino.systems': 'часть carino.systems',
     },
 };
 

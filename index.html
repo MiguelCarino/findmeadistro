@@ -26,9 +26,37 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Find Me a Distro", "url": "https://distro.carino.systems/", "description": "Pick a Linux or BSD family and get one of its distros at random, with a link to its site. A random pick, not a match; your choices stay in the link.", "operatingSystem": "Any (runs in a web browser)", "isAccessibleForFree": true, "author": {"@type": "Person", "name": "Miguel Cariño", "url": "https://carino.systems/"}}</script>
   <!-- /carino:head -->
   <link rel="icon" type="image/webp" href="logo.webp" />
+  <!-- Theme before first paint, so neither theme flashes the other:
+       ?theme=gold|color (review links; not stored) > carino-theme cookie
+       (shared across *.carino.systems) > localStorage > Gold & Black. -->
+  <meta name="theme-color" content="#050505" id="carinoThemeColor">
+  <script>
+  (function () {
+    var d = document.documentElement, t = null;
+    function pick(v) { return v === 'gold' ? 'gold' : (v === 'color' || v === 'colour') ? 'color' : null; }
+    try { t = pick(new URLSearchParams(location.search).get('theme')); } catch (e) {}
+    if (!t) { try { var m = document.cookie.match(/(?:^|;\s*)carino-theme=([^;]*)/); if (m) t = pick(decodeURIComponent(m[1])); } catch (e) {} }
+    if (!t) { try { t = pick(localStorage.getItem('carino-theme')); } catch (e) {} }
+    t = t || 'gold';
+    d.setAttribute('data-carino-theme', t);
+    var dark = d.getAttribute('data-theme') !== 'light' && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches;
+    var meta = document.getElementById('carinoThemeColor');
+    if (meta) meta.content = t === 'gold' ? '#050505' : (dark ? '#0e1420' : '#eef3fc');
+  })();
+  </script>
   <link rel="stylesheet" href="fonts/carino-fonts.css" />
   <link rel="stylesheet" href="carino-ui.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Colourful theme + the switch; nothing applies until data-carino-theme="color". -->
+  <link rel="stylesheet" href="carino-theme.css" />
+  <style>
+    /* the hero mark in both colourings; the theme picks one */
+    .short-hero .mark.mk-color, :root[data-carino-theme="color"] .short-hero .mark.mk-gold { display: none; }
+    :root[data-carino-theme="color"] .short-hero .mark.mk-color { display: block; }
+    /* Colourful: carino-theme.css remaps the tokens; css/style.css reads
+       only tokens, so the page background is all that is added here. */
+    :root[data-carino-theme="color"] body { background-image: var(--stage-grad); }
+  </style>
 </head>
 <body>
   <div data-carino-actions>
@@ -38,7 +66,8 @@
 
   <main class="fmad">
     <section class="short-hero" aria-labelledby="heroTitle">
-      <img class="mark" src="logo.svg" alt="" width="48" height="48">
+      <img class="mark mk-gold" src="logo.svg" alt="" width="48" height="48">
+      <img class="mark mk-color" src="logo-color.svg" alt="" width="48" height="48">
       <h1 id="heroTitle"><span data-i18n>Find a Linux or BSD distro</span><br><span class="gold" data-i18n>you have not tried yet.</span></h1>
       <div class="how">
         <div class="how-title" data-i18n>How it works</div>
@@ -110,6 +139,7 @@
   <script src="js/handlelink.js"></script>
   <script src="js/app.js" defer></script>
   <script src="carino-navbar.js" data-app="Distro" data-repo="findmeadistro" defer></script>
+  <script src="carino-theme.js" data-mark="logo.svg" data-mark-color="logo-color.svg" defer></script>
   <script src="carino-lang.js" defer></script>
   <script src="i18n.js" defer></script>
 </body>

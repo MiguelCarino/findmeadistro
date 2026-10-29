@@ -57,6 +57,8 @@
     /* Colourful: carino-theme.css remaps the tokens; css/style.css reads
        only tokens, so the page background is all that is added here. */
     :root[data-carino-theme="color"] body { background-image: var(--stage-grad); }
+    /* step numbers are a sequence: one identity hue, not the interactive blue */
+    :root[data-carino-theme="color"] #choices .q .q-n { color: var(--ct-purple); border-color: color-mix(in srgb, var(--ct-purple) 40%, transparent); }
   </style>
 </head>
 <body>

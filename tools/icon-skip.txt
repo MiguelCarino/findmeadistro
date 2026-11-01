@@ -1,0 +1,7 @@
+# Icons that came back but are not the distro's own (a host's or theme's default).
+mocaccino-org
+regolith-linux-org
+archhurd-org
+trueos-org
+berry-osdn-jp
+knulli-org

@@ -52,6 +52,16 @@
   <link rel="stylesheet" href="carino-theme.css" />
 </head>
 <body class="play-body">
+<!-- Key words: the navbar shows them, translated, under its Language tab. -->
+<ul data-carino-words hidden>
+  <li>Pull a distro</li>
+  <li>Your pool</li>
+  <li>Collection</li>
+  <li>Families</li>
+  <li>Runs on</li>
+  <li>Odds</li>
+</ul>
+
   <div data-carino-actions>
     <button type="button" class="cs-btn" id="copyLink" data-priority="1" data-i18n>Copy link</button>
     <button type="button" class="cs-btn" id="startOver" data-i18n>Start over</button>
@@ -140,7 +150,6 @@
         <a class="btn visit-btn" id="visitBtn" href="#" target="_blank" rel="noopener noreferrer" hidden><span data-i18n>Visit its site</span> ↗</a>
       </div>
       <div class="shelf-mini"><span data-i18n>Collection</span> <b id="colMini">0 / 0</b> <button type="button" class="btn btn-ghost" id="colOpen2" data-i18n>Open</button></div>
-      <p class="privacy-line" data-i18n>Your choices stay in this link, and your collection stays in this browser. Nothing is sent anywhere.</p>
     </section>
 
     <aside class="shelf" aria-labelledby="shelfTitle">
@@ -169,9 +178,13 @@
     <div class="scrim" id="scrim" hidden></div>
 
     <div data-carino-about hidden>
-      <p><a href="https://github.com/MiguelCarino/findmeadistro/issues" target="_blank" rel="noopener" data-i18n>Suggest a distro</a> · <a href="https://github.com/KripC2160/findmealinuxdistro" target="_blank" rel="noopener" data-i18n>Upstream project</a></p>
-      <p data-i18n>Fork of Find Me A Linux Distro by KripC</p>
+      <p data-i18n>Your choices stay in this link, and your collection stays in this browser. Nothing is sent anywhere.</p>
+      <p><a href="https://github.com/MiguelCarino/findmeadistro/issues" target="_blank" rel="noopener" data-i18n>Suggest a distro</a></p>
       <p data-i18n>Architectures are listed from each project's download page as best we know; tell us if one is wrong.</p>
+    </div>
+    <div data-carino-licence hidden>
+      <p data-i18n>Fork of Find Me A Linux Distro by KripC</p>
+      <p><a href="https://github.com/KripC2160/findmealinuxdistro" target="_blank" rel="noopener" data-i18n>Upstream project</a></p>
     </div>
   </main>
 
